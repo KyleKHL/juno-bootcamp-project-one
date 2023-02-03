@@ -327,3 +327,11 @@ footer p {
   color: #f0efed;
   line-height: 0;
 }
+
+header {
+  background-image: url(../../assets/home-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+}
