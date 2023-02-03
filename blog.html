@@ -4,19 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Planted Blog</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <!-- START OF NAV -->
+            <p>Planted</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#aboutUs">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- END OF NAV -->
+            <h1>Blog</h1>
+        </div>
     </header>
+    <!-- MAIN -->
+    <main>
+        <!-- OUR MISSION SECTION -->
+        <section class="ourMission">
+                <!-- START OF SIDE BAR -->
+            <div class="aboutPlantedSideBar">
+                <div class="sideBarImage"><img src="./assets/side-bar-image.jpg"
+                        alt="The outside of old concrete building with brown wooden window"></div>
+                <div class="wrapper">
+                    <div class="aboutPlanted">
+                        <h4>About Planted</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed in debitis labore?</p>
+                    </div>
+                    <div class="recentPosts">
+                        <h4>Recent Posts</h4>
+                        <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Exercitationem, tempora. Dignissimos, reprehenderit!</li>
+                            <li>Accusantium facilis ab eos?</li>
+                            <li>Totam nemo esse magni!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF SIDE BAR -->
+            <!-- START OF PLANTED MISSION-->
+            <div class="ourMissionContainer">
+                <!-- BACKGROUND IMG -->
+                <div class="postOurMissionImage"></div>
+                <div class="wrapper">
+                    <h2>Our Mission At Planted</h2>
+                    <p>Monday January 21st, 2019 by Yousra</p>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deleniti nostrum, quo placeat magnam porro voluptatum cupiditate quasi ducimus ipsum modi assumenda perferendis mollitia maiores consequatur exercitationem distinctio error. Repellendus?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum ut ipsa nam consequuntur inventore impedit dolores consectetur ullam? Cupiditate, laudantium architecto necessitatibus vitae eos dignissimos sint aspernatur iste distinctio!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut saepe eius deleniti minus doloremque possimus rem quis. Voluptatum veniam rem in labore rerum perferendis, fuga, ipsam, voluptatibus assumenda ipsum magnam. Vero quaerat neque natus voluptates, sed iusto cum similique, iure unde repellat distinctio rem animi, consequuntur eum ipsam saepe accusamus modi totam autem praesentium. In ullam eum ea doloremque exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vitae. Cum autem quo ea voluptatum asperiores accusamus animi officia, laborum deserunt nobis doloremque facere dignissimos harum vitae quibusdam labore nulla?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quaerat natus, vel aliquid temporibus facere praesentium tempore rem esse vero totam alias in tempora, eum eaque placeat itaque quo hic?</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- END OF MISSIONS SECTION -->
+
+        <!-- COMMENT SECTION -->
+        <section>
+            <div class="wrapper">
+                <h3>Commeents</h3>
+                <div class="jeremyComment">
+                    <div class="profileImgContainer">
+                        <img src="./assets/profile-image.jpg" alt="Profile picture of Jeremy">
+                    </div>
+                    <h4>Tuesday October 9th, 2018 by Jeremy</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam, sint quibusdam beatae nihil vel ipsam cumque minus earum ipsum nobis itaque accusantium repudiandae quasi consequuntur ratione? Blanditiis, fuga dicta!</p>
+                </div>
+                <div class="juliaComment">
+                    <div class="profileImgContainer">
+                        <img src="./assets/profile-image-2.jpg" alt="Profile Picture of Julia">
+                    </div>
+                    <h4>Wednesday October 10th, 2018 by Julia</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae voluptatum, illo excepturi mollitia fuga molestiae autem, itaque aperiam a harum? Veniam veritatis hic, consequuntur.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- POST COMMENT/FORM SECTION -->
+        <section>
+            <form action="#" method="post" name="commentForm">
+                <!-- NAME -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <!-- EMAIL -->
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Email address">
+                <!-- COMMENT TEXT AREA-->
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" cols="80" rows="50" placeholder="Comment"></textarea>
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+        <!-- EMD OF COMMENT/FORM SECTION -->
+    </main>
+
+    <!-- START OF FOOTER -->
+    <footer>
+        <p>Copyright &copy; 2018 HackerYou</p>
+    </footer>
+    <!-- END OF FOOTER -->
 </body>
 </html>
