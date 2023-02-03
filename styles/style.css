@@ -341,6 +341,13 @@ header nav ul li a {
   padding: 10px;
 }
 
+button {
+  background-color: #0E902D;
+  color: #f0efed;
+  padding: 10px 25px;
+  border: none;
+}
+
 footer {
   background-color: #2c2c2c;
   display: -webkit-box;
@@ -365,12 +372,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   margin: 0 auto;
+  position: relative;
 }
 
 .homeHeaderContainer {
-  height: 90vh;
+  height: 70vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,8 +396,145 @@ h1 {
   line-height: 150px;
   width: 700px;
   font-weight: 400;
+  z-index: 10;
 }
 
 span {
   color: #f8e71c;
+}
+
+.leafyBackground {
+  background-image: url(..//..//assets/header-box.jpg);
+  position: absolute;
+  width: 45%;
+  height: 85%;
+  bottom: -80px;
+  right: 0;
+  z-index: 0;
+}
+
+section.aboutUs {
+  background-color: #f0efed;
+  padding: 200px 100px;
+}
+
+section.aboutUs .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.aboutUs h2 {
+  margin-bottom: 0;
+}
+
+section.aboutUs p {
+  text-align: center;
+}
+
+section.discoverUpcoming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.discoverContainer {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 0;
+}
+
+.discoverInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 70%;
+  margin-right: 0;
+  text-align: end;
+}
+
+.discoverInfo h6,
+.workshopInfo h6 {
+  margin: 0;
+}
+
+.flowerImgContainer {
+  -webkit-box-shadow: 15px 15px #f8e71c;
+          box-shadow: 15px 15px #f8e71c;
+  width: 100%;
+  position: relative;
+  top: -75px;
+}
+
+.workshopContainer {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.workshopInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: start;
+  max-width: 70%;
+  margin-left: 0;
+}
+
+.greenFlowerImgContainer {
+  -webkit-box-shadow: -15px 15px #f8e71c;
+          box-shadow: -15px 15px #f8e71c;
+  width: 100%;
+  position: relative;
+  bottom: -50px;
+}
+
+section.infoSection {
+  background-color: #f0efed;
 }

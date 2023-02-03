@@ -4,12 +4,15 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
+    position: relative;
 }
 
+
+
 .homeHeaderContainer {
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -22,10 +25,21 @@ h1 {
     line-height: 150px;
     width: 700px;
     font-weight: 400;
+    z-index: 10;
 }
 
 span {
     color: #f8e71c;
+}
+
+.leafyBackground {
+    background-image: url(..//..//assets/header-box.jpg);
+    position: absolute;
+    width: 45%;
+    height: 85%;
+    bottom: -80px;
+    right: 0;
+    z-index: 0;
 }
 
 
