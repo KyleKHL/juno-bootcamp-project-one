@@ -253,8 +253,8 @@ a {
 }
 
 .wrapper {
-  max-width: 1200px;
-  width: 90%;
+  width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -313,6 +313,34 @@ button {
   font-size: 1rem;
 }
 
+.logo {
+  margin: 0;
+  color: #f0efed;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+header nav {
+  width: 50%;
+  padding-top: 10px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: #f0efed;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+}
+
 footer {
   background-color: #2c2c2c;
   display: -webkit-box;
@@ -328,10 +356,40 @@ footer p {
   line-height: 0;
 }
 
+a:hover {
+  color: #f8e71c;
+}
+
 header {
-  background-image: url(../../assets/home-image-1.jpg);
+  background-image: url(..//..//assets/home-image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 80vh;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.homeHeaderContainer {
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  color: #f0efed;
+  line-height: 150px;
+  width: 700px;
+  font-weight: 400;
+}
+
+span {
+  color: #f8e71c;
 }
