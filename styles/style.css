@@ -262,6 +262,12 @@ html {
   font-size: 125%;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+  font-size: 1rem;
+}
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 8.3rem;
@@ -305,4 +311,19 @@ button {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
+}
+
+footer {
+  background-color: #2c2c2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  color: #f0efed;
+  line-height: 0;
 }
