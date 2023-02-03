@@ -1,3 +1,17 @@
 @use "setup";
-@use "typography";
 @use "globalStyles";
+@use "typography";
+@use "nav";
+@use "footer";
+
+// HOME PAGE
+@use "homeHeader";
+@use "homeSections";
+
+// BLOG PAGE
+@use "blogHeader";
+@use "blogSections";
+
+// CONTACT PAGE
+@use "contactHeader";
+@use "contactSections";

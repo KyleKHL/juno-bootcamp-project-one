@@ -236,6 +236,28 @@ html {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+  max-height: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 html {
   font-size: 125%;
 }
@@ -283,26 +305,4 @@ button {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-}
-
-img {
-  width: 100%;
-  max-height: auto;
-  display: block;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
 }
