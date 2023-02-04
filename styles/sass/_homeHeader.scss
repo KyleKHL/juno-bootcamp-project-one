@@ -1,10 +1,11 @@
 // HEADER
-header {
+.homePageHeader {
     background-image: url(..//..//assets/home-image-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 80vh;
+    min-height: 600px;
     margin: 0 auto;
     position: relative;
 }
@@ -13,6 +14,7 @@ header {
 
 .homeHeaderContainer {
     height: 70vh;
+    min-height: 600px;
     width: 100%;
     display: flex;
     justify-content: center;
