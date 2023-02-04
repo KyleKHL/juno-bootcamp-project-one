@@ -321,11 +321,11 @@ button {
 }
 
 header nav {
-  width: 50%;
   padding-top: 10px;
 }
 
 header nav ul {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +393,7 @@ a:hover {
           align-items: center;
 }
 
-h1 {
+.homeHeaderContainer h1 {
   color: #f0efed;
   line-height: 150px;
   width: 700px;
@@ -649,6 +649,14 @@ h3 {
       flex-basis: 31%;
 }
 
+.blogHeader h2 {
+  color: #f8e71c;
+}
+
+.blogHeader nav {
+  background-color: black;
+}
+
 .contactPageHeader {
   background-image: url(..//..//assets/contact-header-1.jpg);
   background-position: center;
@@ -657,6 +665,10 @@ h3 {
   height: 50vh;
   min-height: 400px;
   position: relative;
+}
+
+.contactPageHeader nav {
+  background-color: black;
 }
 
 .contactHeaderContainer h2 {
