@@ -415,7 +415,7 @@ span {
 
 section.aboutUs {
   background-color: #f0efed;
-  padding: 200px 100px;
+  padding: 225px 100px;
 }
 
 section.aboutUs .wrapper {
@@ -434,8 +434,8 @@ section.aboutUs .wrapper {
           align-items: center;
 }
 
-section.aboutUs h2 {
-  margin-bottom: 0;
+section.aboutUs h3 {
+  margin: 0;
 }
 
 section.aboutUs p {
@@ -537,4 +537,112 @@ section.discoverUpcoming {
 
 section.infoSection {
   background-color: #f0efed;
+  padding-top: 125px;
+  padding-bottom: 75px;
+}
+
+section.infoSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
+.infoContainer a {
+  padding-right: 20px;
+  padding-top: 0;
+}
+
+.infoContainer i {
+  font-size: 1.25rem;
+  background-color: #f8e71c;
+  color: #2c2c2c;
+  border-radius: 2rem;
+  border: 15px solid #f8e71c;
+}
+
+.infoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.infoSection h6 {
+  margin: 0;
+  padding-top: 15px;
+}
+
+section.founderSection {
+  background-color: #f0efed;
+  padding: 150px 0;
+}
+
+section.founderSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.founderImgContainer {
+  width: 25%;
+  -webkit-box-shadow: 15px 15px #f8e71c;
+          box-shadow: 15px 15px #f8e71c;
+}
+
+.plantedFounderInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+h3 {
+  margin: 0;
+}
+
+.gallerySection {
+  padding: 100px 0;
+}
+
+.gallerySection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallerySection ul li {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
 }
