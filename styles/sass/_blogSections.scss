@@ -1,22 +1,19 @@
 .divider{
     background-color: #f0efed;
+    // display: flex;
 }
 
-.divider .wrapper{
+.divider .wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-
 section.sideBar {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+    width: 30%;
+    min-width: 250px;
     margin-top: 125px;
-    padding: 20px;
-    width: 150%;
-    margin-right: 50px;
-    position: relative;
+    background-color: white;
+    height: 100%;
 }
 
 
@@ -25,13 +22,14 @@ section.sideBar h6 {
 }
 
 .sideBarText {
+    background-color: white;
     padding-top: 30px;
 }
 .sideBarImage {
-    width: 200%;
-    position: absolute;
-    left: -300px;
-
+    width: 150%;
+    position: relative;
+    top: -10px;
+    left: -200px;
 }
 
 .recentPosts {
@@ -53,6 +51,11 @@ section.sideBar h6 {
 // SIDEBAR ENDS
 // MISSION SECTION BEGINS
 
+.missionSection {
+    width: 60%;
+    margin-top: -200px;
+    z-index: 10;
+}
 
 .ourMissionContainer {
     display: flex;
@@ -61,17 +64,15 @@ section.sideBar h6 {
     border-left: 5px solid #f8e71c;
     border-bottom: 5px solid #f8e71c;
     padding-left: 10px;
-    margin-top: -200px;
 }
 
 .postOurMissionImage {
     box-shadow: -15px 15px #f8e71c;
-    z-index: 10;
+    z-index: 20;
 }
 
 .missionArticleContainer {
     padding-top: 75px;
-    padding-left: 30px;
 }
 
 .missionArticleContainer h4 {
@@ -91,26 +92,15 @@ section.sideBar h6 {
 // END OF MISSIONS SECTION
 
 // COMMENT SECTION
-section.commentSection {
+.commentSection {
     background-color: #f0efed;
 }
 
-section.commentSection .wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-left: 35px;
-}
-
-section.commentSection .wrapper .titleContainer {
-    width: 68%;
-}
 
 .jeremyComment,
 .juliaComment {
     padding-bottom: 125px;
     display: flex;
-    width: 68%;
     justify-content: space-between;
     align-content: space-between;
 }
@@ -137,12 +127,12 @@ section.commentSection .wrapper .titleContainer {
 // COMMENT SECTION END
 
 // FORM/POST COMMENT SECTION BEGIN
-section.blogPostComment {
+.blogPostComment {
     background-color: #f0efed;
     padding-bottom: 100px;
 }
 
-section.blogPostComment .wrapper {
+.blogPostComment .wrapper {
     display: flex;
     justify-content: flex-end;
 }
@@ -150,7 +140,6 @@ section.blogPostComment .wrapper {
 .blogForm {
     display: flex;
     flex-direction: column;
-    width: 68%;
 }
 
 .blogForm label {

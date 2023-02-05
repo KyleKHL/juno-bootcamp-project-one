@@ -38,9 +38,8 @@
     <main>
         <div class="divider">
             <div class="wrapper">
-        <!-- OUR MISSION SECTION -->
+            <!-- START OF SIDE BAR SECTION -->
                 <section class="sideBar">
-            <!-- START OF SIDE BAR -->
                     <div class="sideBarImage">
                         <img src="./assets/side-bar-image.jpg" alt="The outside of old concrete building with brown wooden window">
                     </div>
@@ -63,10 +62,10 @@
                 <!-- END OF SIDE BAR -->
                 <!-- START OF PLANTED MISSION-->
                 <section class="missionSection">
+                    <div class="postOurMissionImage"><img src="./assets/post-image.jpg"
+                            alt="Several plant stems and leafs with a beige background"></div>
                     <div class="ourMissionContainer">
                     <!-- BACKGROUND IMG -->
-                        <div class="postOurMissionImage"><img src="./assets/post-image.jpg"
-                            alt="Several plant stems and leafs with a beige background"></div>
                         <div class="missionArticleContainer">
                             <h4>Our mission at Planted</h4>
                             <p class="articleAuthor">Monday January 21st, 2019 by <span>Yousra</span></p>
@@ -78,59 +77,56 @@
                             </article>
                         </div>
                     </div>
+                    <!-- COMMENT SECTION -->
+                    <div class="commentSection">
+                        <div class="commentTitleContainer">
+                            <h3>Comments</h3>
+                        </div>
+                        <div class="jeremyComment">
+                            <div class="profileImgContainer">
+                                <img src="./assets/profile-image.jpg" alt="Profile picture of Jeremy">
+                            </div>
+                            <div class="commentText">
+                                <h6>Tuesday October 9th, 2018 by Jeremy</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam, sint quibusdam beatae nihil vel
+                                    ipsam cumque minus earum ipsum nobis itaque accusantium repudiandae quasi consequuntur ratione?
+                                    Blanditiis, fuga dicta!</p>
+                            </div>
+                        </div>
+                        <div class="juliaComment">
+                            <div class="profileImgContainer">
+                                <img src="./assets/profile-image-2.jpg" alt="Profile Picture of Julia">
+                            </div>
+                            <div class="commentText">
+                                <h6>Wednesday October 10th, 2018 by Julia</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae voluptatum, illo excepturi
+                                    mollitia fuga molestiae autem, itaque aperiam a harum? Veniam veritatis hic, consequuntur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- POST COMMENT/FORM SECTION -->
+                    <div class="blogPostComment">
+                        <form action="#" method="post" name="commentForm" class="blogForm">
+                            <div class="blogFormNameEmailContainer">
+                                <!-- NAME -->
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Name">
+                                <!-- EMAIL -->
+                                <label for="email">Email Address</label>
+                                <input type="text" id="email" name="email" placeholder="Email address">
+                            </div>
+                            <!-- COMMENT TEXT AREA-->
+                            <label for="comment">Comment</label>
+                            <textarea name="comment" id="comment" cols="80" rows="10" placeholder="Comment"></textarea>
+                            <!-- SUBMIT BUTTON -->
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                    <!-- EMD OF COMMENT/FORM SECTION -->
                 </section>
+            </div>
         <!-- END OF MISSIONS SECTION -->
-            </div>
         </div>
-
-        <!-- COMMENT SECTION -->
-        <section class="commentSection">
-            <div class="wrapper">
-                <div class="titleContainer">
-                <h3>Comments</h3>
-                </div>
-                <div class="jeremyComment">
-                    <div class="profileImgContainer">
-                        <img src="./assets/profile-image.jpg" alt="Profile picture of Jeremy">
-                    </div>
-                    <div class="commentText">
-                        <h6>Tuesday October 9th, 2018 by Jeremy</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam, sint quibusdam beatae nihil vel ipsam cumque minus earum ipsum nobis itaque accusantium repudiandae quasi consequuntur ratione? Blanditiis, fuga dicta!</p>
-                    </div>
-                </div>
-                <div class="juliaComment">
-                    <div class="profileImgContainer">
-                        <img src="./assets/profile-image-2.jpg" alt="Profile Picture of Julia">
-                    </div>
-                    <div class="commentText">
-                        <h6>Wednesday October 10th, 2018 by Julia</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae voluptatum, illo excepturi mollitia fuga molestiae autem, itaque aperiam a harum? Veniam veritatis hic, consequuntur.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- POST COMMENT/FORM SECTION -->
-        <section class="blogPostComment">
-            <div class="wrapper">
-                <form action="#" method="post" name="commentForm" class="blogForm">
-                    <div class="blogFormNameEmailContainer">
-                        <!-- NAME -->
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name">
-                        <!-- EMAIL -->
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email" placeholder="Email address">
-                    </div>
-                    <!-- COMMENT TEXT AREA-->
-                    <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" cols="80" rows="10" placeholder="Comment"></textarea>
-                    <!-- SUBMIT BUTTON -->
-                    <button type="submit">Post Comment</button>
-                </form>
-            </div>
-        </section>
-        <!-- EMD OF COMMENT/FORM SECTION -->
     </main>
 
     <!-- START OF FOOTER -->

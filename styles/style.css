@@ -700,19 +700,11 @@ section.founderSection .wrapper {
 }
 
 section.sideBar {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 30%;
+  min-width: 250px;
   margin-top: 125px;
-  padding: 20px;
-  width: 150%;
-  margin-right: 50px;
-  position: relative;
+  background-color: white;
+  height: 100%;
 }
 
 section.sideBar h6 {
@@ -720,13 +712,15 @@ section.sideBar h6 {
 }
 
 .sideBarText {
+  background-color: white;
   padding-top: 30px;
 }
 
 .sideBarImage {
-  width: 200%;
-  position: absolute;
-  left: -300px;
+  width: 150%;
+  position: relative;
+  top: -10px;
+  left: -200px;
 }
 
 .recentPosts {
@@ -746,6 +740,12 @@ section.sideBar h6 {
   margin-left: -1rem;
 }
 
+.missionSection {
+  width: 60%;
+  margin-top: -200px;
+  z-index: 10;
+}
+
 .ourMissionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -758,18 +758,16 @@ section.sideBar h6 {
   border-left: 5px solid #f8e71c;
   border-bottom: 5px solid #f8e71c;
   padding-left: 10px;
-  margin-top: -200px;
 }
 
 .postOurMissionImage {
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
-  z-index: 10;
+  z-index: 20;
 }
 
 .missionArticleContainer {
   padding-top: 75px;
-  padding-left: 30px;
 }
 
 .missionArticleContainer h4 {
@@ -785,26 +783,8 @@ section.sideBar h6 {
   font-weight: bold;
 }
 
-section.commentSection {
+.commentSection {
   background-color: #f0efed;
-}
-
-section.commentSection .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-left: 35px;
-}
-
-section.commentSection .wrapper .titleContainer {
-  width: 68%;
 }
 
 .jeremyComment,
@@ -813,7 +793,6 @@ section.commentSection .wrapper .titleContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 68%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -844,12 +823,12 @@ section.commentSection .wrapper .titleContainer {
   margin: 0;
 }
 
-section.blogPostComment {
+.blogPostComment {
   background-color: #f0efed;
   padding-bottom: 100px;
 }
 
-section.blogPostComment .wrapper {
+.blogPostComment .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,7 +845,6 @@ section.blogPostComment .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 68%;
 }
 
 .blogForm label {
