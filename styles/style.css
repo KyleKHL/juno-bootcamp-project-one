@@ -316,6 +316,7 @@ h6 {
 .commentText h6 {
   margin: 0;
   font-size: 1rem;
+  color: #074115;
 }
 
 input, textarea {
@@ -685,21 +686,20 @@ section.founderSection .wrapper {
   margin-bottom: 80px;
 }
 
-section.ourMission {
+.divider {
   background-color: #f0efed;
 }
 
-section.ourMission .wrapper {
+.divider .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
-.aboutPlantedSideBar {
+section.sideBar {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,21 +708,14 @@ section.ourMission .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 28%;
-  height: 100%;
   margin-top: 125px;
   padding: 20px;
-  position: relative;
+  width: 150%;
+  margin-right: 50px;
 }
 
 .aboutPlantedSideBar h6 {
   margin: 0;
-}
-
-.sideBarImage {
-  width: 200px;
-  min-width: 600px;
-  position: absolute;
 }
 
 .recentPosts {
@@ -750,20 +743,35 @@ section.ourMission .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 68%;
-  padding: 30px;
+  width: 100%;
   border-left: 5px solid #f8e71c;
   border-bottom: 5px solid #f8e71c;
-  margin-top: 580px;
+  padding-left: 10px;
+  margin-top: -200px;
 }
 
 .postOurMissionImage {
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
-  width: 100%;
-  position: absolute;
-  right: -400px;
-  top: -225px;
+  z-index: 10;
+}
+
+.missionArticleContainer {
+  padding-top: 75px;
+  padding-left: 30px;
+}
+
+.missionArticleContainer h4 {
+  margin: 0;
+}
+
+.missionArticleContainer .articleAuthor {
+  color: #074115;
+  font-style: italic;
+}
+
+.missionArticleContainer .articleAuthor span {
+  font-weight: bold;
 }
 
 section.commentSection {

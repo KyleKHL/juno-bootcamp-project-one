@@ -1,35 +1,34 @@
-section.ourMission {
+.divider{
     background-color: #f0efed;
 }
 
-section.ourMission .wrapper {
+.divider .wrapper{
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
-// SIDEBAR 
-.aboutPlantedSideBar {
+
+section.sideBar {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 28%;
-    height: 100%;
     margin-top: 125px;
     padding: 20px;
-    position: relative;
+    width: 150%;
+    margin-right: 50px;
 }
+
 
 .aboutPlantedSideBar h6 {
     margin: 0;
 }
 
-.sideBarImage {
-    width: 200px;
-    min-width: 600px;
-    position: absolute;
-    
-}
+// .sideBarImage {
+//     width: 25%;
+//     position: absolute;
+//     left: 0;
+//     top: 100px;
+// }
 
 .recentPosts {
     margin-top: 50px;
@@ -49,23 +48,39 @@ section.ourMission .wrapper {
 }
 // SIDEBAR ENDS
 // MISSION SECTION BEGINS
+
+
 .ourMissionContainer {
     display: flex;
     flex-direction: column;
-    width: 68%;
-    padding: 30px;
+    width: 100%;
     border-left: 5px solid #f8e71c;
     border-bottom: 5px solid #f8e71c;
-    margin-top: 580px;
+    padding-left: 10px;
+    margin-top: -200px;
 }
 
 .postOurMissionImage {
     box-shadow: -15px 15px #f8e71c;
-    width: 100%;
-    position: absolute;
-    right: -400px;
-    top: -225px;
+    z-index: 10;
+}
 
+.missionArticleContainer {
+    padding-top: 75px;
+    padding-left: 30px;
+}
+
+.missionArticleContainer h4 {
+    margin: 0;
+}
+
+.missionArticleContainer .articleAuthor {
+    color: #074115;
+    font-style: italic;
+}
+
+.missionArticleContainer .articleAuthor span {
+    font-weight: bold;
 }
 
 
