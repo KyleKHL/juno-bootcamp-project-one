@@ -16,19 +16,23 @@ section.sideBar {
     padding: 20px;
     width: 150%;
     margin-right: 50px;
+    position: relative;
 }
 
 
-.aboutPlantedSideBar h6 {
+section.sideBar h6 {
     margin: 0;
 }
 
-// .sideBarImage {
-//     width: 25%;
-//     position: absolute;
-//     left: 0;
-//     top: 100px;
-// }
+.sideBarText {
+    padding-top: 30px;
+}
+.sideBarImage {
+    width: 200%;
+    position: absolute;
+    left: -300px;
+
+}
 
 .recentPosts {
     margin-top: 50px;
