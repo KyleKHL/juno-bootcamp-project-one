@@ -1,7 +1,22 @@
-.blogHeader h2 {
-    color: #f8e71c;
-}
-
+// BLACK BACKGROUND TO NAV
 .blogHeader nav {
     background-color: black;
+}
+
+// HEADER
+.blogHeader {
+    background-image: url(..//..//assets/blog-header-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    min-height: 250px;
+    position: relative;
+}
+
+.blogHeader h2 {
+    color: #f8e71c;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
 }

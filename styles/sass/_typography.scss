@@ -1,6 +1,7 @@
 // TYPOGRAPHY STYLES
 html {
     font-size: 125%;
+    color: #2c2c2c;
 }
 
 body {
@@ -49,8 +50,24 @@ h6 {
     letter-spacing: 1px;
 }
 
+// headings in sidebar on BLOG PAGE
+.aboutPlantedSideBar h6 {
+    font-size: 1rem;
 
+}
+
+// this is the heading used in comments on blog page
+.commentText h6 {
+    margin: 0;
+    font-size: 1rem;
+}
 // HEADINGS END
+
+// INPUT/TEXTAREA IN FORMS
+input, textarea {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 
 // BUTTON TEXT
 button {
