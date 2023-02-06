@@ -339,7 +339,6 @@ button {
 header nav {
   padding-top: 10px;
 }
-
 header nav ul {
   width: 50%;
   display: -webkit-box;
@@ -350,8 +349,7 @@ header nav ul {
           justify-content: space-between;
   gap: 30px;
 }
-
-header nav ul li a {
+header nav ul a {
   color: #f0efed;
   font-family: "Josefin Sans", sans-serif;
   padding: 10px;
@@ -393,6 +391,18 @@ a:hover {
   margin: 0 auto;
   position: relative;
 }
+.homePageHeader nav ul li:nth-child(2) a {
+  color: #f8e71c;
+}
+.homePageHeader .leafyBackground {
+  background-image: url(..//..//assets/header-box.jpg);
+  position: absolute;
+  width: 45%;
+  height: 85%;
+  bottom: -80px;
+  right: 0;
+  z-index: 0;
+}
 
 .homeHeaderContainer {
   height: 70vh;
@@ -408,7 +418,6 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .homeHeaderContainer h1 {
   color: #f0efed;
   line-height: 150px;
@@ -416,26 +425,14 @@ a:hover {
   font-weight: 400;
   z-index: 10;
 }
-
 .homeHeaderContainer span {
   color: #f8e71c;
-}
-
-.leafyBackground {
-  background-image: url(..//..//assets/header-box.jpg);
-  position: absolute;
-  width: 45%;
-  height: 85%;
-  bottom: -80px;
-  right: 0;
-  z-index: 0;
 }
 
 section.aboutUs {
   background-color: #f0efed;
   padding: 225px 100px;
 }
-
 section.aboutUs .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,11 +448,9 @@ section.aboutUs .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-
 section.aboutUs h3 {
   margin: 0;
 }
-
 section.aboutUs p {
   text-align: center;
 }
@@ -486,8 +481,14 @@ section.discoverUpcoming {
           justify-content: space-evenly;
   margin-left: 0;
 }
-
-.discoverInfo {
+.discoverContainer .flowerImgContainer {
+  -webkit-box-shadow: 15px 15px #f8e71c;
+          box-shadow: 15px 15px #f8e71c;
+  width: 100%;
+  position: relative;
+  top: -75px;
+}
+.discoverContainer .discoverInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,22 +499,12 @@ section.discoverUpcoming {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  max-width: 70%;
+  max-width: 60%;
   margin-right: 0;
   text-align: end;
 }
-
-.discoverInfo h6,
-.workshopInfo h6 {
+.discoverContainer .discoverInfo h6 {
   margin: 0;
-}
-
-.flowerImgContainer {
-  -webkit-box-shadow: 15px 15px #f8e71c;
-          box-shadow: 15px 15px #f8e71c;
-  width: 100%;
-  position: relative;
-  top: -75px;
 }
 
 .workshopContainer {
@@ -526,8 +517,7 @@ section.discoverUpcoming {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.workshopInfo {
+.workshopContainer .workshopInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,8 +534,10 @@ section.discoverUpcoming {
   max-width: 70%;
   margin-left: 0;
 }
-
-.greenFlowerImgContainer {
+.workshopContainer .workshopInfo h6 {
+  margin: 0;
+}
+.workshopContainer .greenFlowerImgContainer {
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
   width: 100%;
@@ -558,7 +550,6 @@ section.infoSection {
   padding-top: 125px;
   padding-bottom: 75px;
 }
-
 section.infoSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,21 +568,18 @@ section.infoSection .wrapper {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
 }
-
 .infoContainer a {
   padding-right: 20px;
   padding-top: 0;
 }
-
-.infoContainer i {
+.infoContainer a i {
   font-size: 1.25rem;
   background-color: #f8e71c;
   color: #2c2c2c;
   border-radius: 2rem;
   border: 15px solid #f8e71c;
 }
-
-.infoText {
+.infoContainer .infoText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,8 +588,7 @@ section.infoSection .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-section.infoSection h6 {
+.infoContainer .infoText h6 {
   margin: 0;
   padding-top: 15px;
 }
@@ -610,7 +597,6 @@ section.founderSection {
   background-color: #f0efed;
   padding: 150px 0;
 }
-
 section.founderSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,14 +608,12 @@ section.founderSection .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.founderImgContainer {
+section.founderSection .wrapper .founderImgContainer {
   width: 25%;
   -webkit-box-shadow: 15px 15px #f8e71c;
           box-shadow: 15px 15px #f8e71c;
 }
-
-.plantedFounderInfo {
+section.founderSection .wrapper .plantedFounderInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,15 +626,13 @@ section.founderSection .wrapper {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
-.plantedFounderInfo h3 {
+section.founderSection .wrapper .plantedFounderInfo h3 {
   margin: 0;
 }
 
 .gallerySection {
   padding: 100px 0;
 }
-
 .gallerySection ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,7 +641,6 @@ section.founderSection .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .gallerySection ul li {
   -ms-flex-preferred-size: 31%;
       flex-basis: 31%;
@@ -667,6 +648,9 @@ section.founderSection .wrapper {
 
 .blogHeader nav {
   background-color: black;
+}
+.blogHeader nav li:nth-child(4) a {
+  color: #f8e71c;
 }
 
 .blogHeader {
@@ -678,7 +662,6 @@ section.founderSection .wrapper {
   min-height: 250px;
   position: relative;
 }
-
 .blogHeader h2 {
   color: #f8e71c;
   position: absolute;
@@ -705,6 +688,12 @@ section.sideBar {
   margin-top: 125px;
   background-color: white;
   height: 100%;
+}
+
+.aboutPlanted a {
+  color: #074115;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 section.sideBar h6 {
@@ -786,9 +775,8 @@ section.sideBar h6 {
 .commentSection {
   background-color: #f0efed;
 }
-
-.jeremyComment,
-.juliaComment {
+.commentSection .jeremyComment,
+.commentSection .juliaComment {
   padding-bottom: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,12 +787,12 @@ section.sideBar h6 {
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
-
-.profileImgContainer {
+.commentSection .jeremyComment .profileImgContainer,
+.commentSection .juliaComment .profileImgContainer {
   width: 20%;
 }
-
-.commentText {
+.commentSection .jeremyComment .commentText,
+.commentSection .juliaComment .commentText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,12 +802,9 @@ section.sideBar h6 {
           flex-direction: column;
   width: 70%;
 }
-
-.commentText h6 {
-  margin: 0;
-}
-
-.commentText p {
+.commentSection .jeremyComment .commentText h6, .commentSection .jeremyComment .commentText p,
+.commentSection .juliaComment .commentText h6,
+.commentSection .juliaComment .commentText p {
   margin: 0;
 }
 
@@ -827,17 +812,7 @@ section.sideBar h6 {
   background-color: #f0efed;
   padding-bottom: 100px;
 }
-
-.blogPostComment .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.blogForm {
+.blogPostComment .blogForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,12 +821,10 @@ section.sideBar h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.blogForm label {
+.blogPostComment .blogForm label {
   display: none;
 }
-
-.blogForm .blogFormNameEmailContainer {
+.blogPostComment .blogForm .blogFormNameEmailContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,8 +833,7 @@ section.sideBar h6 {
           justify-content: space-between;
   padding-bottom: 30px;
 }
-
-.blogFormNameEmailContainer input {
+.blogPostComment .blogForm .blogFormNameEmailContainer input {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   background-color: #f0efed;
@@ -870,8 +842,7 @@ section.sideBar h6 {
   padding-left: 30px;
   padding-bottom: 25px;
 }
-
-.blogForm textarea {
+.blogPostComment .blogForm textarea {
   padding-top: 40px;
   padding-left: 35px;
   margin-bottom: 30px;
@@ -886,9 +857,11 @@ section.sideBar h6 {
   min-height: 400px;
   position: relative;
 }
-
 .contactPageHeader nav {
   background-color: black;
+}
+.contactPageHeader nav li:nth-child(5) a {
+  color: #f8e71c;
 }
 
 .contactHeaderContainer h2 {
@@ -900,20 +873,9 @@ section.sideBar h6 {
   bottom: 0;
 }
 
-.contactInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 section.contactSection {
   background-color: #f0efed;
 }
-
 section.contactSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,8 +884,7 @@ section.contactSection .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.contactInfo {
+section.contactSection .wrapper .contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,8 +896,7 @@ section.contactSection .wrapper {
   margin-right: 10px;
   margin-top: 150px;
 }
-
-.socialMediaIcons i {
+section.contactSection .wrapper .contactInfo .socialMediaIcons i {
   color: #0E902D;
   font-size: 1.2rem;
   padding-right: 20px;
@@ -957,8 +917,14 @@ section.contactSection .wrapper {
   position: relative;
   top: -225px;
 }
-
-.nameEmailContactForm {
+.contactPageForm label {
+  display: none;
+}
+.contactPageForm input {
+  border: none;
+  border-bottom: solid 2px #0E902D;
+}
+.contactPageForm .nameEmailContactForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,22 +933,11 @@ section.contactSection .wrapper {
           justify-content: space-between;
   padding-bottom: 40px;
 }
-
-.nameEmailContactForm input {
+.contactPageForm .nameEmailContactForm input {
   width: 48%;
   padding-left: 20px;
   padding-bottom: 30px;
 }
-
-.contactPageForm label {
-  display: none;
-}
-
-.contactPageForm input {
-  border: none;
-  border-bottom: solid 2px #0E902D;
-}
-
 .contactPageForm textarea {
   border: 2px solid #0E902D;
   margin-bottom: 50px;

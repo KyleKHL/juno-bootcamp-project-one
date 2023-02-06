@@ -7,17 +7,16 @@
 
 header nav {
     padding-top: 10px;
-}
 
-header nav ul {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-header nav ul li a{
-    color: #f0efed;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 10px;
+    ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        a {
+            color: #f0efed;
+            font-family: 'Josefin Sans', sans-serif;
+            padding: 10px;
+        }
+    }
 }

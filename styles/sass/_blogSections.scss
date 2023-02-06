@@ -16,6 +16,11 @@ section.sideBar {
     height: 100%;
 }
 
+.aboutPlanted a {
+    color: #074115;
+    font-weight: bold;
+    font-style: oblique;
+}
 
 section.sideBar h6 {
     margin: 0;
@@ -94,76 +99,63 @@ section.sideBar h6 {
 // COMMENT SECTION
 .commentSection {
     background-color: #f0efed;
+
+    .jeremyComment,
+    .juliaComment {
+        padding-bottom: 125px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+
+        .profileImgContainer {
+            width: 20%;
+        }
+
+        .commentText {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+
+            h6, p {
+                margin: 0;
+            }
+        }
+    }
 }
-
-
-.jeremyComment,
-.juliaComment {
-    padding-bottom: 125px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-}
-
-.profileImgContainer {
-    width: 20%;
-}
-
-
-.commentText {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-.commentText h6 {
-    margin: 0;
-}
-
-.commentText p {
-    margin: 0;
-}
-
 // COMMENT SECTION END
-
 // FORM/POST COMMENT SECTION BEGIN
 .blogPostComment {
     background-color: #f0efed;
     padding-bottom: 100px;
-}
 
-.blogPostComment .wrapper {
-    display: flex;
-    justify-content: flex-end;
-}
+    .blogForm {
+        display: flex;
+        flex-direction: column;
 
-.blogForm {
-    display: flex;
-    flex-direction: column;
-}
+        label {
+            display: none;
+        }
 
-.blogForm label {
-    display: none;
-}
+        .blogFormNameEmailContainer {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
 
-.blogForm .blogFormNameEmailContainer {
-display: flex;
-justify-content: space-between;
-padding-bottom: 30px;
-}
+            input {
+                flex-basis: 48%;
+                background-color: #f0efed;
+                border: none;
+                border-bottom: #0e902d solid 2px;
+                padding-left: 30px;
+                padding-bottom: 25px;
+            }
+        }
 
-.blogFormNameEmailContainer input {
-    flex-basis: 48%;
-    background-color: #f0efed;
-    border: none;
-    border-bottom: #0e902d solid 2px;
-    padding-left: 30px;
-    padding-bottom: 25px;
-}
-
-.blogForm textarea {
-    padding-top: 40px;
-    padding-left: 35px;
-    margin-bottom: 30px;
+        textarea {
+            padding-top: 40px;
+            padding-left: 35px;
+            margin-bottom: 30px;
+        }
+    }
 }
 

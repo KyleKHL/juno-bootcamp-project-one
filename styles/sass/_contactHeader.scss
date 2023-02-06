@@ -6,10 +6,13 @@
     height: 50vh;
     min-height: 400px;
     position: relative;
-}
 
-.contactPageHeader nav {
+    nav {
     background-color: black;
+        li:nth-child(5) a {
+            color: #f8e71c;
+        }
+    }
 }
 
 .contactHeaderContainer h2 {
@@ -20,9 +23,3 @@
     padding-bottom: 10px;
     bottom: 0;
 }
-
-.contactInfo {
-    display: flex;
-    flex-direction: column;
-}
-

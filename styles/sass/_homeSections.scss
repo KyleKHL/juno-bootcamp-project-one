@@ -3,21 +3,21 @@
 section.aboutUs {
     background-color: #f0efed;
     padding: 225px 100px;
-}
 
-section.aboutUs .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-section.aboutUs h3 {
-    margin: 0;
-}
+    h3 {
+        margin: 0;
+    }
 
-section.aboutUs p {
-    text-align: center;
+    p {
+        text-align: center;
+    }
 }
 
 // UPCOMING WORKSHOPS & DISCOVER SECTION
@@ -33,37 +33,34 @@ section.discoverUpcoming {
     align-items: flex-end;
     justify-content: space-evenly;
     margin-left: 0;
-}
 
-.discoverInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 70%;
-    margin-right: 0;
-    text-align: end;
-} 
+    .flowerImgContainer {
+        box-shadow: 15px 15px #f8e71c;
+        width: 100%;
+        position: relative;
+        top: -75px;
+    }
 
-.discoverInfo h6,
-.workshopInfo h6 {
-    margin: 0;
-}
+    .discoverInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 60%;
+        margin-right: 0;
+        text-align: end;
 
-
-.flowerImgContainer {
-    box-shadow: 15px 15px #f8e71c;
-    width: 100%;
-    position: relative;
-    top: -75px;
+        h6 {
+            margin: 0;
+        }
+    } 
 }
 
 .workshopContainer {
     width: 43%;
     display: flex;
     flex-direction: column;
-}
 
-.workshopInfo {
+    .workshopInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -72,13 +69,18 @@ section.discoverUpcoming {
     text-align: start;
     max-width: 70%;
     margin-left: 0;
-}
 
-.greenFlowerImgContainer {
-    box-shadow: -15px 15px #f8e71c;
-    width: 100%;
-    position: relative;
-    bottom: -50px;
+        h6 {
+            margin: 0;
+        }
+    }
+
+    .greenFlowerImgContainer {
+        box-shadow: -15px 15px #f8e71c;
+        width: 100%;
+        position: relative;
+        bottom: -50px;
+    }
 }
 // END OF DISCOVER/WORKSHOP SECTION
 
@@ -87,83 +89,83 @@ section.infoSection {
     background-color: #f0efed;
     padding-top: 125px;
     padding-bottom: 75px;
-}
 
-section.infoSection .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
 }
 
 .infoContainer {
     display: flex;
     flex-basis: 47%;
+
+    a {
+        padding-right: 20px;
+        padding-top: 0;
+
+        i {
+            font-size: 1.25rem;
+            background-color: #f8e71c;
+            color: #2c2c2c;
+            border-radius: 2rem;
+            border: 15px solid #f8e71c;
+        }
+    }
+
+    .infoText {
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+        margin: 0;
+        padding-top: 15px;
+        }
+    }
 }
-
-.infoContainer a {
-    padding-right: 20px;
-    padding-top: 0;
-}
-
-.infoContainer i {
-    font-size: 1.25rem;
-    background-color: #f8e71c;
-    color: #2c2c2c;
-    border-radius: 2rem;
-    border: 15px solid #f8e71c;
-}
-
-.infoText {
-    display: flex;
-    flex-direction: column;
-}
-
-
-section.infoSection h6 {
-    margin: 0;
-    padding-top: 15px;
-}
-
-// IMG OF POTTED PLANTS FILLED IN DIV CONTAINER 
-
+// END OF FOUR PART INFO SECTION
 
 // PLANTED FOUNDER SECTION
 section.founderSection {
     background-color: #f0efed;
     padding: 150px 0;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .founderImgContainer {
+        width: 25%;
+        box-shadow: 15px 15px #f8e71c;
+        }
+
+        .plantedFounderInfo {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            align-items: flex-start;
+
+            h3 {
+                margin: 0;
+            }
+        }
+    }
 }
 
-section.founderSection .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.founderImgContainer {
-    width: 25%;
-    box-shadow: 15px 15px #f8e71c;
-}
-
-.plantedFounderInfo {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    align-items: flex-start;
-}
-
-.plantedFounderInfo h3 {
-    margin: 0;
-}
 // GALLERY SECTION
 .gallerySection {
     padding: 100px 0;
-}
 
-.gallerySection ul {
-    display: flex;
-    justify-content: space-between;
-}
+    ul {
+        display: flex;
+        justify-content: space-between;
 
-.gallerySection ul li {
-    flex-basis: 31%;
+        li {
+            flex-basis: 31%;
+        }
+    }
 }
