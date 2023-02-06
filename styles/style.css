@@ -669,11 +669,18 @@ section.founderSection .wrapper .plantedFounderInfo h3 {
   margin-bottom: 80px;
 }
 
+.blogWrapper1 {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
 .divider {
   background-color: #f0efed;
 }
 
-.divider .wrapper {
+.divider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,11 +690,10 @@ section.founderSection .wrapper .plantedFounderInfo h3 {
 }
 
 section.sideBar {
-  width: 30%;
   min-width: 250px;
   margin-top: 125px;
-  background-color: white;
   height: 100%;
+  width: 35%;
 }
 
 .aboutPlanted a {
@@ -700,16 +706,9 @@ section.sideBar h6 {
   margin: 0;
 }
 
-.sideBarText {
+.sideBarTextContainer {
   background-color: white;
-  padding-top: 30px;
-}
-
-.sideBarImage {
-  width: 150%;
-  position: relative;
-  top: -10px;
-  left: -200px;
+  padding: 40px;
 }
 
 .recentPosts {
@@ -729,10 +728,17 @@ section.sideBar h6 {
   margin-left: -1rem;
 }
 
+.blogWrapper2 {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
 .missionSection {
-  width: 60%;
   margin-top: -200px;
   z-index: 10;
+  width: 60%;
 }
 
 .ourMissionContainer {
@@ -743,20 +749,17 @@ section.sideBar h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
   border-left: 5px solid #f8e71c;
   border-bottom: 5px solid #f8e71c;
-  padding-left: 10px;
 }
 
 .postOurMissionImage {
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
-  z-index: 20;
 }
 
 .missionArticleContainer {
-  padding-top: 75px;
+  padding: 75px 30px 30px 40px;
 }
 
 .missionArticleContainer h4 {
@@ -766,6 +769,7 @@ section.sideBar h6 {
 .missionArticleContainer .articleAuthor {
   color: #074115;
   font-style: italic;
+  margin-bottom: 50px;
 }
 
 .missionArticleContainer .articleAuthor span {
@@ -781,15 +785,13 @@ section.sideBar h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .commentSection .jeremyComment .profileImgContainer,
 .commentSection .juliaComment .profileImgContainer {
-  width: 20%;
+  width: 15%;
+  min-width: 100px;
 }
 .commentSection .jeremyComment .commentText,
 .commentSection .juliaComment .commentText {
