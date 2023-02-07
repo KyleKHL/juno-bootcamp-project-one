@@ -1,23 +1,26 @@
-@use "setup";
-@use "globalStyles";
-@use "typography";
-@use "nav";
-@use "button";
-@use "footer";
-@use "pseudoSelectors";
+// GLOBAL/SETUP
+@use './partials/setup';
+@use './partials/globalStyles';
+@use './partials/typography';
+
+// PAGE PARTIALS
+@use './partials/nav';
+@use './partials/button';
+@use './partials/footer';
+@use './partials/pseudoSelectors';
 
 // HOME PAGE
-@use "homeHeader";
-@use "homeSections";
+@use './partials/homeHeader';
+@use './partials/homeSections';
 
 // BLOG PAGE
-@use "blogHeader";
-@use "blogSections";
+@use './partials/blogHeader';
+@use './partials/blogSections';
 
 // CONTACT PAGE
-@use "contactHeader";
-@use "contactSectionWithForm";
+@use './partials/contactHeader';
+@use './partials/contactSectionWithForm';
 
 
 // MEDIA QUERIES
-@use "mobile";
+@use './partials/mediaQueries';

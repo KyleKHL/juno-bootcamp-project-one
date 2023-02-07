@@ -15,11 +15,13 @@
     background-size: cover;
     height: 50vh;
     min-height: 250px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 
     h2 {
         color: #f8e71c;
-        position: absolute;
         bottom: 0;
         margin-bottom: 80px;
     }
