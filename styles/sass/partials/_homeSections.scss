@@ -143,12 +143,12 @@ section.founderSection {
             flex-direction: column;
             width: 65%;
             align-items: flex-start;
-
-            h3 {
-                margin: 0;
-            }
         }
     }
+}
+
+.plantedFounderInfo h3 {
+    margin: 0;
 }
 
 // GALLERY SECTION

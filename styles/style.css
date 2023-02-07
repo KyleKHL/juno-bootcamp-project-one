@@ -631,7 +631,8 @@ section.founderSection .wrapper .plantedFounderInfo {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-section.founderSection .wrapper .plantedFounderInfo h3 {
+
+.plantedFounderInfo h3 {
   margin: 0;
 }
 
@@ -817,9 +818,8 @@ section.sideBar h6 {
           flex-direction: column;
   width: 70%;
 }
-.commentSection .jeremyComment .commentText h6, .commentSection .jeremyComment .commentText p,
-.commentSection .juliaComment .commentText h6,
-.commentSection .juliaComment .commentText p {
+
+.commentText h6, p {
   margin: 0;
 }
 
@@ -848,7 +848,13 @@ section.sideBar h6 {
           justify-content: space-between;
   padding-bottom: 30px;
 }
-.blogPostComment .blogForm .blogFormNameEmailContainer input {
+.blogPostComment .blogForm textarea {
+  padding-top: 40px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.blogFormNameEmailContainer input {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   background-color: #f0efed;
@@ -856,11 +862,6 @@ section.sideBar h6 {
   border-bottom: #0e902d solid 2px;
   padding-left: 30px;
   padding-bottom: 25px;
-}
-.blogPostComment .blogForm textarea {
-  padding-top: 40px;
-  padding-left: 35px;
-  margin-bottom: 30px;
 }
 
 .contactPageHeader {
@@ -917,7 +918,8 @@ section.contactSection .wrapper .contactInfo {
   margin-right: 10px;
   margin-top: 150px;
 }
-section.contactSection .wrapper .contactInfo .socialMediaIcons i {
+
+.socialMediaIcons i {
   color: #0E902D;
   font-size: 1.2rem;
   padding-right: 20px;
