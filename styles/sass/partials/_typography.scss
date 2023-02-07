@@ -1,3 +1,7 @@
+// VARIABLES
+@use './variable' as *;
+// VARIABLES
+
 // TYPOGRAPHY STYLES
 html {
     font-size: 125%;
@@ -80,12 +84,3 @@ button {
 
 // TEXT STYLE WITHIN FORMS
 
-// COLORS
-$primaryBackgroundColor: #F0EFED;
-$secondaryColor: #F8E71C;
-$tertiaryColor: #0E902D;
-$headingColor: #074115;
-
-// FONTS
-$headerFont: 'Josefin Sans', sans-serif;
-$bodyFont: 'Roboto', sans-serif;

@@ -1,3 +1,7 @@
+// VARIABLES
+@use './variable' as *;
+// VARIABLES
+
 // BLACK BACKGROUND TO NAV
 .blogHeader nav {
     background-color: black;
@@ -21,7 +25,7 @@
     
 
     h2 {
-        color: #f8e71c;
+        color: $secondaryColor;
         bottom: 0;
         margin-bottom: 80px;
     }
