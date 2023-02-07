@@ -254,7 +254,7 @@ a {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 100%;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -366,6 +366,8 @@ button {
 
 footer {
   background-color: #2c2c2c;
+}
+footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,6 +471,7 @@ section.discoverUpcoming {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .discoverContainer {
@@ -483,17 +486,16 @@ section.discoverUpcoming {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-left: 0;
-}
-.discoverContainer .flowerImgContainer {
-  -webkit-box-shadow: 15px 15px #f8e71c;
-          box-shadow: 15px 15px #f8e71c;
-  width: 100%;
   position: relative;
-  top: -75px;
+  top: -30px;
+}
+.discoverContainer .colourfulFlowerImgContainer {
+  -webkit-box-shadow: 20px 20px #f8e71c;
+          box-shadow: 20px 20px #f8e71c;
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 125px;
 }
 .discoverContainer .discoverInfo {
   display: -webkit-box;
@@ -506,15 +508,14 @@ section.discoverUpcoming {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  max-width: 60%;
-  margin-right: 0;
+  width: 80%;
   text-align: end;
 }
 .discoverContainer .discoverInfo h6 {
   margin: 0;
 }
 
-.workshopContainer {
+.upcomingContainer {
   width: 43%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,8 +524,10 @@ section.discoverUpcoming {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  bottom: -150px;
 }
-.workshopContainer .workshopInfo {
+.upcomingContainer .upcomingInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,26 +538,21 @@ section.discoverUpcoming {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  text-align: start;
-  max-width: 70%;
-  margin-left: 0;
+  width: 80%;
+  margin-bottom: 75px;
 }
-.workshopContainer .workshopInfo h6 {
+.upcomingContainer .upcomingInfo h6 {
   margin: 0;
 }
-.workshopContainer .greenFlowerImgContainer {
-  -webkit-box-shadow: -15px 15px #f8e71c;
-          box-shadow: -15px 15px #f8e71c;
+.upcomingContainer .greenFlowerImgContainer {
+  -webkit-box-shadow: -20px 20px #f8e71c;
+          box-shadow: -20px 20px #f8e71c;
   width: 100%;
-  position: relative;
-  bottom: -50px;
 }
 
 section.infoSection {
   background-color: #f0efed;
-  padding-top: 125px;
+  padding-top: 150px;
   padding-bottom: 75px;
 }
 section.infoSection .wrapper {
@@ -649,8 +647,8 @@ section.founderSection .wrapper .plantedFounderInfo h3 {
           justify-content: space-between;
 }
 .gallerySection ul li {
-  -ms-flex-preferred-size: 31%;
-      flex-basis: 31%;
+  margin: 10px;
+  width: calc(33.3333333333% - 20px);
 }
 
 .blogHeader nav {

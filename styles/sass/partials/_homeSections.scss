@@ -1,5 +1,4 @@
 // ABOUT US SECTION
-
 section.aboutUs {
     background-color: #f0efed;
     padding: 225px 100px;
@@ -19,11 +18,12 @@ section.aboutUs {
         text-align: center;
     }
 }
-
+// ABOUT US SECTION ENDS 
 // UPCOMING WORKSHOPS & DISCOVER SECTION
 section.discoverUpcoming {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .discoverContainer {
@@ -31,44 +31,43 @@ section.discoverUpcoming {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-evenly;
-    margin-left: 0;
+    position: relative;
+    top: -30px;
 
-    .flowerImgContainer {
-        box-shadow: 15px 15px #f8e71c;
+    .colourfulFlowerImgContainer {
+        box-shadow: 20px 20px #f8e71c;
         width: 100%;
-        position: relative;
-        top: -75px;
+        align-self: flex-start;
+        margin-bottom: 125px;
     }
 
     .discoverInfo {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        max-width: 60%;
-        margin-right: 0;
+        width: 80%;
         text-align: end;
 
         h6 {
             margin: 0;
         }
     } 
-}
+} //discover part is complete//
 
-.workshopContainer {
+//upcoming part begins
+.upcomingContainer {
     width: 43%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: -150px;
 
-    .workshopInfo {
+    .upcomingInfo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    text-align: start;
-    max-width: 70%;
-    margin-left: 0;
+    width: 80%;
+    margin-bottom: 75px;
 
         h6 {
             margin: 0;
@@ -76,18 +75,16 @@ section.discoverUpcoming {
     }
 
     .greenFlowerImgContainer {
-        box-shadow: -15px 15px #f8e71c;
+        box-shadow: -20px 20px #f8e71c;
         width: 100%;
-        position: relative;
-        bottom: -50px;
     }
-}
-// END OF DISCOVER/WORKSHOP SECTION
+} //upcoming part ends
+// END OF DISCOVER/UPCOMING SECTION
 
 // FOUR PART INFO SECTION BEGINS
 section.infoSection {
     background-color: #f0efed;
-    padding-top: 125px;
+    padding-top: 150px;
     padding-bottom: 75px;
 
     .wrapper {
@@ -95,8 +92,6 @@ section.infoSection {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-
 }
 
 .infoContainer {
@@ -165,7 +160,8 @@ section.founderSection {
         justify-content: space-between;
 
         li {
-            flex-basis: 31%;
+            margin: 10px;
+            width: calc((100% / 3) - 20px);
         }
     }
 }
