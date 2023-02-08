@@ -16,13 +16,16 @@
     nav {
     background-color: black;
         li:nth-child(5) a {
-            color: #f8e71c;
+            color: $secondaryColor;
         }
     }
 }
 
-.contactHeaderContainer h2 {
-    color: #f8e71c;
+.contactHeaderContainer h1 {
+    @include primaryFont(4rem);
+    font-weight: bold;
+    line-height: 92px;
+    color: $secondaryColor;
     width: 250px;
     margin-bottom: 15px;
 }

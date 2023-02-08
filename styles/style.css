@@ -267,73 +267,19 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 32px;
-  font-size: 1rem;
-}
-
-h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 8.3rem;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 4rem;
-  line-height: 92px;
-}
-
-h3 {
-  font-size: 2.815rem;
-  letter-spacing: 1.3px;
-}
-
-h4 {
-  font-size: 2.15rem;
-  letter-spacing: 1.3px;
-}
-
-h5 {
-  font-size: 2.1rem;
-  letter-spacing: 1px;
-}
-
-h6 {
-  font-size: 1.6rem;
-  letter-spacing: 1px;
 }
 
 .aboutPlantedSideBar h6 {
   font-size: 1rem;
 }
 
-.commentText h6 {
-  margin: 0;
-  font-size: 1rem;
-  color: #074115;
-}
-
-input, textarea {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-button {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
 .logo {
-  margin: 0;
-  color: #f0efed;
-  font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #F0EFED;
   padding-right: 10px;
 }
 
@@ -351,15 +297,28 @@ header nav ul {
   gap: 30px;
 }
 header nav ul a {
-  color: #f0efed;
+  font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #F0EFED;
   padding: 10px;
   text-transform: uppercase;
 }
 
 button {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-align: center;
   background-color: #0E902D;
-  color: #f0efed;
+  color: #F0EFED;
   padding: 10px 25px;
   border: none;
 }
@@ -377,12 +336,12 @@ footer .wrapper {
 }
 
 footer p {
-  color: #f0efed;
+  color: #F0EFED;
   line-height: 0;
 }
 
 a:hover {
-  color: #f8e71c;
+  color: #F8E71C;
 }
 
 .homePageHeader {
@@ -399,7 +358,7 @@ a:hover {
   height: 100%;
 }
 .homePageHeader nav ul li:nth-child(2) a {
-  color: #f8e71c;
+  color: #F8E71C;
 }
 .homePageHeader .leafyBackground {
   background-image: url(..//..//assets/header-box.jpg);
@@ -411,7 +370,6 @@ a:hover {
   height: 85%;
   bottom: -80px;
   right: 0;
-  z-index: 0;
 }
 
 .homeHeaderTextContainer {
@@ -428,18 +386,22 @@ a:hover {
           align-items: center;
 }
 .homeHeaderTextContainer h1 {
-  color: #f0efed;
-  line-height: 150px;
-  width: 700px;
-  font-weight: 400;
+  color: #F0EFED;
+  line-height: 125px;
   z-index: 10;
+  font-size: 8.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 .homeHeaderTextContainer span {
-  color: #f8e71c;
+  display: block;
+  color: #F8E71C;
 }
 
 section.aboutUs {
-  background-color: #f0efed;
+  background-color: #F0EFED;
   padding: 225px 100px;
 }
 section.aboutUs .wrapper {
@@ -457,8 +419,14 @@ section.aboutUs .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-section.aboutUs h3 {
+section.aboutUs h2 {
+  font-size: 2.815rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1.3px;
 }
 section.aboutUs p {
   text-align: center;
@@ -490,8 +458,8 @@ section.discoverUpcoming {
   top: -30px;
 }
 .discoverContainer .colourfulFlowerImgContainer {
-  -webkit-box-shadow: 20px 20px #f8e71c;
-          box-shadow: 20px 20px #f8e71c;
+  -webkit-box-shadow: 20px 20px #F8E71C;
+          box-shadow: 20px 20px #F8E71C;
   width: 100%;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -511,8 +479,14 @@ section.discoverUpcoming {
   width: 80%;
   text-align: end;
 }
-.discoverContainer .discoverInfo h6 {
+.discoverContainer .discoverInfo h3 {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .upcomingContainer {
@@ -541,17 +515,23 @@ section.discoverUpcoming {
   width: 80%;
   margin-bottom: 75px;
 }
-.upcomingContainer .upcomingInfo h6 {
+.upcomingContainer .upcomingInfo h3 {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .upcomingContainer .greenFlowerImgContainer {
-  -webkit-box-shadow: -20px 20px #f8e71c;
-          box-shadow: -20px 20px #f8e71c;
+  -webkit-box-shadow: -20px 20px #F8E71C;
+          box-shadow: -20px 20px #F8E71C;
   width: 100%;
 }
 
 section.infoSection {
-  background-color: #f0efed;
+  background-color: #F0EFED;
   padding-top: 150px;
   padding-bottom: 75px;
 }
@@ -579,10 +559,10 @@ section.infoSection .wrapper {
 }
 .infoContainer a i {
   font-size: 1.25rem;
-  background-color: #f8e71c;
+  background-color: #F8E71C;
   color: #2c2c2c;
   border-radius: 2rem;
-  border: 15px solid #f8e71c;
+  border: 15px solid #F8E71C;
 }
 .infoContainer .infoText {
   display: -webkit-box;
@@ -593,13 +573,19 @@ section.infoSection .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.infoContainer .infoText h6 {
+.infoContainer .infoText h4 {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
   padding-top: 15px;
 }
 
 section.founderSection {
-  background-color: #f0efed;
+  background-color: #F0EFED;
   padding: 150px 0;
 }
 section.founderSection .wrapper {
@@ -615,8 +601,8 @@ section.founderSection .wrapper {
 }
 section.founderSection .wrapper .founderImgContainer {
   width: 25%;
-  -webkit-box-shadow: 15px 15px #f8e71c;
-          box-shadow: 15px 15px #f8e71c;
+  -webkit-box-shadow: 15px 15px #F8E71C;
+          box-shadow: 15px 15px #F8E71C;
 }
 section.founderSection .wrapper .plantedFounderInfo {
   display: -webkit-box;
@@ -627,13 +613,23 @@ section.founderSection .wrapper .plantedFounderInfo {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 65%;
+  height: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.plantedFounderInfo h3 {
+.plantedFounderInfo h5 {
+  font-size: 2.1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .gallerySection {
@@ -656,7 +652,7 @@ section.founderSection .wrapper .plantedFounderInfo {
   background-color: black;
 }
 .blogHeader nav li:nth-child(4) a {
-  color: #f8e71c;
+  color: #F8E71C;
 }
 
 .blogHeader {
@@ -677,9 +673,15 @@ section.founderSection .wrapper .plantedFounderInfo {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blogHeader h2 {
+.blogHeader h1 {
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 92px;
   color: #F8E71C;
-  bottom: 0;
   margin-bottom: 80px;
 }
 
@@ -691,7 +693,7 @@ section.founderSection .wrapper .plantedFounderInfo {
 }
 
 .divider {
-  background-color: #f0efed;
+  background-color: #F0EFED;
 }
 
 .divider {
@@ -716,8 +718,14 @@ section.sideBar {
   font-style: oblique;
 }
 
-section.sideBar h6 {
+section.sideBar h3 {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .sideBarTextContainer {
@@ -735,7 +743,7 @@ section.sideBar h6 {
 
 .recentPosts ul li::before {
   content: "•";
-  color: #0e902d;
+  color: #0E902D;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -763,21 +771,28 @@ section.sideBar h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-left: 5px solid #f8e71c;
-  border-bottom: 5px solid #f8e71c;
+  border-left: 5px solid #F8E71C;
+  border-bottom: 5px solid #F8E71C;
 }
 
 .postOurMissionImage {
-  -webkit-box-shadow: -15px 15px #f8e71c;
-          box-shadow: -15px 15px #f8e71c;
+  -webkit-box-shadow: -15px 15px #F8E71C;
+          box-shadow: -15px 15px #F8E71C;
 }
 
 .missionArticleContainer {
   padding: 75px 30px 30px 40px;
 }
 
-.missionArticleContainer h4 {
+.missionArticleContainer h2 {
+  font-size: 2.15rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  margin-bottom: 10px;
 }
 
 .missionArticleContainer .articleAuthor {
@@ -791,10 +806,19 @@ section.sideBar h6 {
 }
 
 .commentSection {
-  background-color: #f0efed;
+  background-color: #F0EFED;
 }
-.commentSection .jeremyComment,
-.commentSection .juliaComment {
+.commentSection h4 {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.jeremyComment,
+.juliaComment {
   padding-bottom: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,13 +826,13 @@ section.sideBar h6 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.commentSection .jeremyComment .profileImgContainer,
-.commentSection .juliaComment .profileImgContainer {
+.jeremyComment .profileImgContainer,
+.juliaComment .profileImgContainer {
   width: 15%;
   min-width: 100px;
 }
-.commentSection .jeremyComment .commentText,
-.commentSection .juliaComment .commentText {
+.jeremyComment .commentText,
+.juliaComment .commentText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,16 +842,27 @@ section.sideBar h6 {
           flex-direction: column;
   width: 70%;
 }
-
-.commentText h6, p {
+.jeremyComment .commentText h5,
+.juliaComment .commentText h5 {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #074115;
+  font-weight: bold;
+}
+.jeremyComment .commentText p,
+.juliaComment .commentText p {
   margin: 0;
 }
 
 .blogPostComment {
-  background-color: #f0efed;
+  background-color: #F0EFED;
   padding-bottom: 100px;
 }
-.blogPostComment .blogForm {
+
+.blogForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,10 +871,10 @@ section.sideBar h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.blogPostComment .blogForm label {
+.blogForm label {
   display: none;
 }
-.blogPostComment .blogForm .blogFormNameEmailContainer {
+.blogForm .blogFormNameEmailContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -848,20 +883,30 @@ section.sideBar h6 {
           justify-content: space-between;
   padding-bottom: 30px;
 }
-.blogPostComment .blogForm textarea {
+.blogForm .blogFormNameEmailContainer input {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  background-color: #F0EFED;
+  border: none;
+  border-bottom: #0E902D solid 2px;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+.blogForm textarea {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
   padding-top: 40px;
   padding-left: 35px;
   margin-bottom: 30px;
-}
-
-.blogFormNameEmailContainer input {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  background-color: #f0efed;
-  border: none;
-  border-bottom: #0e902d solid 2px;
-  padding-left: 30px;
-  padding-bottom: 25px;
+  line-height: 32px;
 }
 
 .contactPageHeader {
@@ -886,17 +931,24 @@ section.sideBar h6 {
   background-color: black;
 }
 .contactPageHeader nav li:nth-child(5) a {
-  color: #f8e71c;
+  color: #F8E71C;
 }
 
-.contactHeaderContainer h2 {
-  color: #f8e71c;
+.contactHeaderContainer h1 {
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 92px;
+  color: #F8E71C;
   width: 250px;
   margin-bottom: 15px;
 }
 
 section.contactSection {
-  background-color: #f0efed;
+  background-color: #F0EFED;
 }
 section.contactSection .wrapper {
   display: -webkit-box;
@@ -927,8 +979,9 @@ section.contactSection .wrapper .contactInfo {
 
 .contactPageForm {
   background-color: white;
-  -webkit-box-shadow: -15px 15px #f8e71c;
-          box-shadow: -15px 15px #f8e71c;
+  -webkit-box-shadow: -15px 15px #F8E71C;
+          box-shadow: -15px 15px #F8E71C;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,6 +997,12 @@ section.contactSection .wrapper .contactInfo {
   display: none;
 }
 .contactPageForm input {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
   border: none;
   border-bottom: solid 2px #0E902D;
 }
@@ -963,6 +1022,12 @@ section.contactSection .wrapper .contactInfo {
 }
 .contactPageForm textarea {
   border: 2px solid #0E902D;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
   margin-bottom: 50px;
   text-decoration: none;
   padding-left: 20px;

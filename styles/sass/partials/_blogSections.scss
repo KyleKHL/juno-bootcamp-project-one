@@ -11,7 +11,7 @@
 
 }
 .divider{
-    background-color: #f0efed;
+    background-color: $primaryColor;
     // display: flex;
 }
 
@@ -28,13 +28,15 @@ section.sideBar {
 }
 
 .aboutPlanted a {
-    color: #074115;
+    color: $headingColor;
     font-weight: bold;
     font-style: oblique;
 }
 
-section.sideBar h6 {
-    margin: 0;
+section.sideBar h3 {
+    @include primaryFont(1rem);
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .sideBarTextContainer {
@@ -59,7 +61,7 @@ section.sideBar h6 {
 
 .recentPosts ul li::before {
     content: "\2022";
-    color: #0e902d;
+    color: $tertiaryColor;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -69,7 +71,6 @@ section.sideBar h6 {
 // MISSION SECTION BEGINS
 
 // BLOG WRAPPER 2
-
 .blogWrapper2 {
     width: 100%;
     max-width: 80%;
@@ -86,12 +87,12 @@ section.sideBar h6 {
 .ourMissionContainer {
     display: flex;
     flex-direction: column;
-    border-left: 5px solid #f8e71c;
-    border-bottom: 5px solid #f8e71c;
+    border-left: 5px solid $secondaryColor;
+    border-bottom: 5px solid $secondaryColor;
 }
 
 .postOurMissionImage {
-    box-shadow: -15px 15px #f8e71c;
+    box-shadow: -15px 15px $secondaryColor;
     // position: relative;
     // left: 15px;
 }
@@ -100,12 +101,15 @@ section.sideBar h6 {
     padding: 75px 30px 30px 40px;
 }
 
-.missionArticleContainer h4 {
-    margin: 0;
+.missionArticleContainer h2 {
+    @include primaryFont(2.15rem);
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
 }
 
 .missionArticleContainer .articleAuthor {
-    color: #074115;
+    color: $headingColor;
     font-style: italic;
     margin-bottom: 50px;
 }
@@ -119,64 +123,76 @@ section.sideBar h6 {
 
 // COMMENT SECTION
 .commentSection {
-    background-color: #f0efed;
-
-    .jeremyComment,
-    .juliaComment {
-        padding-bottom: 125px;
-        display: flex;
-        justify-content: space-around;
-
-        .profileImgContainer {
-            width: 15%;
-            min-width: 100px;
-        }
-
-        .commentText {
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-        }
+    background-color: $primaryColor;
+    h4{
+        @include primaryFont(1.6rem);
+        font-weight: bold;
     }
 }
 
-.commentText h6, p {
-    margin: 0;
+.jeremyComment,
+.juliaComment {
+    padding-bottom: 125px;
+    display: flex;
+    justify-content: space-around;
+
+    .profileImgContainer {
+        width: 15%;
+        min-width: 100px;
+    }
+
+    .commentText {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        h5 {
+            @include primaryFont(1rem);
+            color: $headingColor;
+            font-weight: bold;
+        }
+        p{
+            margin: 0;
+        }
+    }
 }
 
 // COMMENT SECTION END
 // FORM/POST COMMENT SECTION BEGIN
 .blogPostComment {
-    background-color: #f0efed;
+    background-color: $primaryColor;
     padding-bottom: 100px;
-
-    .blogForm {
-        display: flex;
-        flex-direction: column;
-
-        label {
-            display: none;
-        }
-
-        .blogFormNameEmailContainer {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 30px;
-        }
-
-        textarea {
-            padding-top: 40px;
-            padding-left: 35px;
-            margin-bottom: 30px;
-        }
-    }
 }
 
-.blogFormNameEmailContainer input {
-    flex-basis: 48%;
-    background-color: #f0efed;
-    border: none;
-    border-bottom: #0e902d solid 2px;
-    padding-left: 30px;
-    padding-bottom: 25px;
+.blogForm {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        display: none;
+    }
+
+    .blogFormNameEmailContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+
+        input {
+            flex-basis: 48%;
+            background-color: $primaryColor;
+            border: none;
+            border-bottom: $tertiaryColor solid 2px;
+            @include primaryFont(1rem);
+            padding-left: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    textarea {
+        @include primaryFont(1rem);
+        padding-top: 40px;
+        padding-left: 35px;
+        margin-bottom: 30px;
+        line-height: 32px;
+    }
 }

@@ -1,9 +1,19 @@
 // COLORS
-$primaryBackgroundColor: #F0EFED;
+$primaryColor: #F0EFED;
 $secondaryColor: #F8E71C;
 $tertiaryColor: #0E902D;
 $headingColor: #074115;
 
 // FONTS
-$headerFont: 'Josefin Sans', sans-serif;
+$primaryFont: 'Josefin Sans', sans-serif;
 $bodyFont: 'Roboto', sans-serif;
+
+// TYPOGRAPHY
+@mixin primaryFont($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $primaryFont;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+

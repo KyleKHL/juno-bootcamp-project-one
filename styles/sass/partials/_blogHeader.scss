@@ -7,7 +7,7 @@
     background-color: black;
 
     li:nth-child(4) a {
-        color: #f8e71c;
+        color: $secondaryColor;
     }
 }
 
@@ -24,9 +24,11 @@
     justify-content: space-between;
     
 
-    h2 {
+    h1 {
+        @include primaryFont(4rem);
+        font-weight: bold;
+        line-height: 92px;
         color: $secondaryColor;
-        bottom: 0;
         margin-bottom: 80px;
     }
 }

@@ -1,17 +1,28 @@
 // GLOBAL STYLES
 
+// TYPOGRAPHY
+html {
+    font-size: 125%;
+    color: #2c2c2c;
+}
+
+body {
+    font-family: $bodyFont;
+    line-height: 32px;
+}
+// IMG
 img {
     width: 100%;
     max-height: auto;
     display: block;
 }
-
+// LISTS
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
+// ANCHOR TAGS
 a {
     text-decoration: none;
 }

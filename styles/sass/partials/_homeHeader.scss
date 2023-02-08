@@ -18,7 +18,7 @@
     }
 
     nav ul li:nth-child(2) a {
-            color: #f8e71c;
+            color: $secondaryColor;
         }
 
     .leafyBackground {
@@ -31,7 +31,6 @@
         height: 85%;
         bottom: -80px;
         right: 0;
-        z-index: 0;
     }
 }
 
@@ -43,15 +42,15 @@
     align-items: center;
 
     h1 {
-        color: #f0efed;
-        line-height: 150px;
-        width: 700px;
-        font-weight: 400;
+        color: $primaryColor;
+        line-height: 125px;
         z-index: 10;
+        @include primaryFont(8.3rem)
     }
 
     span {
-        color: #f8e71c;
+        display: block;
+        color: $secondaryColor;
     }
 }
 

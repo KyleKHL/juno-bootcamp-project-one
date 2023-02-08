@@ -4,7 +4,7 @@
 
 // CONTACT SECTION
 section.contactSection {
-    background-color: #f0efed;
+    background-color: $primaryColor;
 
     .wrapper {
         display: flex;
@@ -21,7 +21,7 @@ section.contactSection {
 }
 
 .socialMediaIcons i {
-    color: #0E902D;
+    color: $tertiaryColor;
     font-size: 1.2rem;
     padding-right: 20px;
 }
@@ -29,7 +29,8 @@ section.contactSection {
 // FORM STARTS
 .contactPageForm {
     background-color: white;
-    box-shadow: -15px 15px #f8e71c;
+    box-shadow: -15px 15px $secondaryColor;
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding: 70px 40px;
@@ -41,8 +42,10 @@ section.contactSection {
     }
 
     input {
+        @include primaryFont(1rem);
+        line-height: 32px;
         border: none;
-        border-bottom: solid 2px #0E902D;
+        border-bottom: solid 2px $tertiaryColor;
     }
 
     .nameEmailContactForm {
@@ -58,7 +61,9 @@ section.contactSection {
     }
 
     textarea {
-        border: 2px solid #0E902D;
+        border: 2px solid $tertiaryColor;
+        @include primaryFont(1rem);
+        line-height: 32px;
         margin-bottom: 50px;
         text-decoration: none;
         padding-left: 20px;

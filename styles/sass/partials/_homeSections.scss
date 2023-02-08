@@ -4,7 +4,7 @@
 
 // ABOUT US SECTION
 section.aboutUs {
-    background-color: #f0efed;
+    background-color: $primaryColor;
     padding: 225px 100px;
 
     .wrapper {
@@ -14,8 +14,10 @@ section.aboutUs {
         align-items: center;
     }
 
-    h3 {
-        margin: 0;
+    h2 {
+        @include primaryFont(2.815rem);
+        font-weight: bold;
+        letter-spacing: 1.3px;
     }
 
     p {
@@ -39,7 +41,7 @@ section.discoverUpcoming {
     top: -30px;
 
     .colourfulFlowerImgContainer {
-        box-shadow: 20px 20px #f8e71c;
+        box-shadow: 20px 20px $secondaryColor;
         width: 100%;
         align-self: flex-start;
         margin-bottom: 125px;
@@ -52,8 +54,10 @@ section.discoverUpcoming {
         width: 80%;
         text-align: end;
 
-        h6 {
-            margin: 0;
+        h3 {
+            @include primaryFont(1.6rem);
+            font-weight: bold;
+            letter-spacing: 1px;
         }
     } 
 } //discover part is complete//
@@ -73,13 +77,15 @@ section.discoverUpcoming {
     width: 80%;
     margin-bottom: 75px;
 
-        h6 {
-            margin: 0;
+        h3 {
+            @include primaryFont(1.6rem);
+            font-weight: bold;
+            letter-spacing: 1px;
         }
     }
 
     .greenFlowerImgContainer {
-        box-shadow: -20px 20px #f8e71c;
+        box-shadow: -20px 20px $secondaryColor;
         width: 100%;
     }
 } //upcoming part ends
@@ -87,7 +93,7 @@ section.discoverUpcoming {
 
 // FOUR PART INFO SECTION BEGINS
 section.infoSection {
-    background-color: #f0efed;
+    background-color: $primaryColor;
     padding-top: 150px;
     padding-bottom: 75px;
 
@@ -108,10 +114,10 @@ section.infoSection {
 
         i {
             font-size: 1.25rem;
-            background-color: #f8e71c;
+            background-color: $secondaryColor;
             color: #2c2c2c;
             border-radius: 2rem;
-            border: 15px solid #f8e71c;
+            border: 15px solid $secondaryColor;
         }
     }
 
@@ -119,9 +125,11 @@ section.infoSection {
         display: flex;
         flex-direction: column;
 
-        h6 {
-        margin: 0;
-        padding-top: 15px;
+        h4 {
+            @include primaryFont(1.6rem);
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-top: 15px;
         }
     }
 }
@@ -129,7 +137,7 @@ section.infoSection {
 
 // PLANTED FOUNDER SECTION
 section.founderSection {
-    background-color: #f0efed;
+    background-color: $primaryColor;
     padding: 150px 0;
 
     .wrapper {
@@ -139,21 +147,27 @@ section.founderSection {
 
         .founderImgContainer {
         width: 25%;
-        box-shadow: 15px 15px #f8e71c;
+        box-shadow: 15px 15px $secondaryColor;
         }
 
         .plantedFounderInfo {
             display: flex;
             flex-direction: column;
             width: 65%;
+            height: 100%;
             align-items: flex-start;
+            justify-content: space-between;
         }
     }
 }
 
-.plantedFounderInfo h3 {
-    margin: 0;
+.plantedFounderInfo h5 {
+    @include primaryFont(2.1rem);
+    font-weight: bold;
+    letter-spacing: 1px;
 }
+
+
 
 // GALLERY SECTION
 .gallerySection {

@@ -3,10 +3,8 @@
 // VARIABLES
 
 .logo {
-    margin: 0;
-    color: #f0efed;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem;
+    @include primaryFont(2rem);
+    color: $primaryColor;
     padding-right: 10px;
 }
 
@@ -19,8 +17,8 @@ header nav {
         justify-content: space-between;
         gap: 30px;
         a {
-            color: #f0efed;
-            font-family: 'Josefin Sans', sans-serif;
+            @include primaryFont(1rem);
+            color: $primaryColor;
             padding: 10px;
             text-transform: uppercase;
         }
