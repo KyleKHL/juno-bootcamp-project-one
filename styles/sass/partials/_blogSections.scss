@@ -16,11 +16,12 @@
 
 
 section.sideBar {
-    min-width: 250px;
     margin-top: 125px;
     height: 100%;
     width: 35%;
+    min-width: 250px;
 }
+
 
 .aboutPlanted a {
     color: $headingColor;
@@ -38,17 +39,13 @@ section.sideBar h3 {
 .sideBarTextContainer {
     background-color: $sideBarColor;
     padding: 40px 30px;
-    border-right: 10px solid white;
+    border-right: 10px solid $sideBarColor;
 }
 
 .sideBarImage {
     width: 85.8%;
     z-index: 10;
-    left: -30px;
-    top: -10px;
-    border-right: solid white 10px;
-    // position: relative;
-    // bottom: 10px;
+    border-right: solid $sideBarColor 10px;
 }
 
 .recentPosts {
