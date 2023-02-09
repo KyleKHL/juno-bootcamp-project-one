@@ -237,6 +237,16 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+  color: #2c2c2c;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 32px;
+}
+
 img {
   width: 100%;
   max-height: auto;
@@ -253,24 +263,20 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #F8E71C;
+}
+
+a:focus {
+  outline: 2px solid #F8E71C;
+  border-radius: 0.5rem;
+  color: #F8E71C;
+}
+
 .wrapper {
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
-}
-
-html {
-  font-size: 125%;
-  color: #2c2c2c;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  line-height: 32px;
-}
-
-.aboutPlantedSideBar h6 {
-  font-size: 1rem;
 }
 
 .logo {
@@ -338,10 +344,6 @@ footer .wrapper {
 footer p {
   color: #F0EFED;
   line-height: 0;
-}
-
-a:hover {
-  color: #F8E71C;
 }
 
 .homePageHeader {
@@ -687,16 +689,12 @@ section.founderSection .wrapper .plantedFounderInfo {
 
 .blogWrapper1 {
   width: 100%;
-  max-width: 350px;
+  max-width: 71.4285714286%;
   margin: 0 auto;
-  margin-right: 0;
 }
 
 .divider {
   background-color: #F0EFED;
-}
-
-.divider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,7 +728,16 @@ section.sideBar h3 {
 
 .sideBarTextContainer {
   background-color: white;
-  padding: 40px;
+  padding: 40px 30px;
+  border-right: 10px solid white;
+}
+
+.sideBarImage {
+  width: 85.8%;
+  z-index: 10;
+  left: -30px;
+  top: -10px;
+  border-right: solid white 10px;
 }
 
 .recentPosts {
@@ -752,15 +759,14 @@ section.sideBar h3 {
 
 .blogWrapper2 {
   width: 100%;
-  max-width: 80%;
+  max-width: 84.6153846154%;
   margin: 0 auto;
-  margin-left: 0;
 }
 
 .missionSection {
   margin-top: -200px;
   z-index: 10;
-  width: 60%;
+  width: 65%;
 }
 
 .ourMissionContainer {
@@ -773,6 +779,7 @@ section.sideBar h3 {
           flex-direction: column;
   border-left: 5px solid #F8E71C;
   border-bottom: 5px solid #F8E71C;
+  margin-left: -15px;
 }
 
 .postOurMissionImage {
@@ -781,7 +788,7 @@ section.sideBar h3 {
 }
 
 .missionArticleContainer {
-  padding: 75px 30px 30px 40px;
+  padding: 75px 0 25px 0;
 }
 
 .missionArticleContainer h2 {
@@ -807,6 +814,7 @@ section.sideBar h3 {
 
 .commentSection {
   background-color: #F0EFED;
+  margin-top: 50px;
 }
 .commentSection h4 {
   font-size: 1.6rem;
@@ -819,12 +827,13 @@ section.sideBar h3 {
 
 .jeremyComment,
 .juliaComment {
-  padding-bottom: 125px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .jeremyComment .profileImgContainer,
 .juliaComment .profileImgContainer {
@@ -859,7 +868,7 @@ section.sideBar h3 {
 
 .blogPostComment {
   background-color: #F0EFED;
-  padding-bottom: 100px;
+  margin: 100px 0;
 }
 
 .blogForm {

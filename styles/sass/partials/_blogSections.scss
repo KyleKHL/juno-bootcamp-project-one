@@ -5,20 +5,15 @@
 // BLOG WRAPPER
 .blogWrapper1 {
     width: 100%;
-    max-width: 350px;
+    max-width: calc((100% - ((10% / 35%) * 100%)));
     margin: 0 auto;
-    margin-right: 0;
-
 }
 .divider{
     background-color: $primaryColor;
-    // display: flex;
-}
-
-.divider {
     display: flex;
     justify-content: space-between;
 }
+
 
 section.sideBar {
     min-width: 250px;
@@ -39,16 +34,21 @@ section.sideBar h3 {
     letter-spacing: 1px;
 }
 
+
 .sideBarTextContainer {
-    background-color: white;
-    padding: 40px;
+    background-color: $sideBarColor;
+    padding: 40px 30px;
+    border-right: 10px solid white;
 }
 
 .sideBarImage {
-    // width: 170%;
+    width: 85.8%;
+    z-index: 10;
+    left: -30px;
+    top: -10px;
+    border-right: solid white 10px;
     // position: relative;
-    // top: -40px;
-    // left: -180px;
+    // bottom: 10px;
 }
 
 .recentPosts {
@@ -73,15 +73,14 @@ section.sideBar h3 {
 // BLOG WRAPPER 2
 .blogWrapper2 {
     width: 100%;
-    max-width: 80%;
+    max-width: calc((100% - ((10% / 65%) * 100%)));
     margin: 0 auto;
-    margin-left: 0;
 }
 
 .missionSection {
     margin-top: -200px;
     z-index: 10;
-    width: 60%;
+    width: 65%;
 }
 
 .ourMissionContainer {
@@ -89,16 +88,15 @@ section.sideBar h3 {
     flex-direction: column;
     border-left: 5px solid $secondaryColor;
     border-bottom: 5px solid $secondaryColor;
+    margin-left: -15px;
 }
 
 .postOurMissionImage {
     box-shadow: -15px 15px $secondaryColor;
-    // position: relative;
-    // left: 15px;
 }
 
 .missionArticleContainer {
-    padding: 75px 30px 30px 40px;
+    padding: 75px 0 25px 0;
 }
 
 .missionArticleContainer h2 {
@@ -124,6 +122,7 @@ section.sideBar h3 {
 // COMMENT SECTION
 .commentSection {
     background-color: $primaryColor;
+    margin-top: 50px;
     h4{
         @include primaryFont(1.6rem);
         font-weight: bold;
@@ -132,9 +131,9 @@ section.sideBar h3 {
 
 .jeremyComment,
 .juliaComment {
-    padding-bottom: 125px;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .profileImgContainer {
         width: 15%;
@@ -161,7 +160,7 @@ section.sideBar h3 {
 // FORM/POST COMMENT SECTION BEGIN
 .blogPostComment {
     background-color: $primaryColor;
-    padding-bottom: 100px;
+    margin: 100px 0;
 }
 
 .blogForm {
