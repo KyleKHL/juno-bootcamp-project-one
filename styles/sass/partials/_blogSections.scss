@@ -3,24 +3,23 @@
 // VARIABLES
 
 // BLOG WRAPPER
-.blogWrapper1 {
-    width: 100%;
-    max-width: calc((100% - ((10% / 35%) * 100%)));
-    margin: 0 auto;
-}
-.divider{
+.divider {
     background-color: $primaryColor;
     display: flex;
     justify-content: space-between;
 }
 
+.blogWrapper1 {
+    width: 100%;
+    max-width: calc((100% - ((10% / 35%) * 100%)));
+    margin: 0 auto;
+}
 
 section.sideBar {
     margin-top: 125px;
     height: 100%;
     width: 35%;
 }
-
 
 .aboutPlanted a {
     color: $headingColor;
@@ -33,7 +32,6 @@ section.sideBar h3 {
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 
 .sideBarTextContainer {
     background-color: $sideBarColor;
@@ -63,7 +61,7 @@ section.sideBar h3 {
     width: 1em;
     margin-left: -1rem;
 }
-// SIDEBAR ENDS
+// END OF SIDEBAR SECTION
 // MISSION SECTION BEGINS
 
 // BLOG WRAPPER 2
@@ -112,8 +110,6 @@ section.sideBar h3 {
 .missionArticleContainer .articleAuthor span {
     font-weight: bold;
 }
-
-
 // END OF MISSIONS SECTION
 
 // COMMENT SECTION
