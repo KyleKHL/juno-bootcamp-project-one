@@ -44,76 +44,11 @@
     }
 }
 
-
-// HOME PAGE MEDIA QUERY
-@media (max-width: 750px) {
-    
-    .homePageHeader {
-        .leafyBackground {
-            height: 65%;
-        }
-    }
-    
-    .homeHeaderTextContainer h1 {
-        font-size: 4rem;
-    }
-
-    section.discoverUpcoming {
-        flex-direction: column;
-            .discoverContainer, .upcomingContainer {
-                width: 100%;
-            }
-            .discoverInfo, .upcomingInfo {
-                width: 100%;
-                max-width: 90%;
-                margin: 0 auto;
-                align-items: center;
-                text-align: center;
-            }
-            .upcomingInfo {
-                margin-bottom: 50px;
-            }
-
-    }
-
-    section.fourPartInfoSection {
-        .wrapper {
-            flex-direction: column;
-            padding-top: 50px;
-        }
-        .infoContainer {
-            margin-bottom: 20px 0;
-        }
-    }
-
-    section.founderSection {
-        .wrapper {
-            flex-direction: column;
-        }
-        .founderImgContainer {
-            width: 60%;
-        }
-        .plantedFounderInfo {
-            width: 100%;
-            align-items: center;
-            text-align: center;
-            margin-top: 50px;
-        }
-    }
-
-    .gallerySection ul {
-        flex-direction: column;
-        align-items: center;
-        li {
-            width: 75%;
-        }
-    }
-}
-
 // MEDIA QUERY FOR BLOG PAGE
-@media (max-width: 850px){
+@media (max-width: 750px){
     .blogHeader .blogPageTitleContainer {
         justify-content: center;
+        align-items: center;
     }
     
     .blogHeader nav {
@@ -128,6 +63,11 @@
         margin-top: 50px;
         width: 100%;
     }
+
+    .ourMissionContainer {
+        margin-left: 0;
+    }
+
     .jeremyComment, .juliaComment {
         flex-direction: column;
         .profileImgContainer {
@@ -146,9 +86,106 @@
     // SIDEBAR SECTION
     section.sideBar {
         width: 100%;
+        margin-bottom: 50px;
     }
 }
 
+
+@media (max-width: 750px) {
+    // MEDIA QUERY FOR THE NAV BAR on various pages
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    // HEADER PAGE -title container height
+    .homeHeaderTextContainer {
+        height: calc(100% - 198px);
+    }
+
+    // BLOG PAGE -title container height
+    .blogHeader .blogPageTitleContainer {
+        height: calc(100% - 198px);
+    }
+
+    // CONTACT PAGE -title container height
+    .contactPageHeader .contactPageTitleContainer {
+        height: calc(100% - 188px);
+    }
+
+// HOME PAGE MEDIA QUERY*****************
+    .homePageHeader {
+        .leafyBackground {
+            height: 65%;
+        }
+    }
+
+    .homeHeaderTextContainer h1 {
+        font-size: 4rem;
+    }
+
+    section.discoverUpcoming {
+        flex-direction: column;
+
+        .discoverContainer,
+        .upcomingContainer {
+            width: 100%;
+        }
+
+        .discoverInfo,
+        .upcomingInfo {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+
+        .upcomingInfo {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    section.fourPartInfoSection {
+        .wrapper {
+            flex-direction: column;
+            padding-top: 50px;
+        }
+
+        .infoContainer {
+            margin-bottom: 20px 0;
+        }
+    }
+
+    section.founderSection {
+        .wrapper {
+            flex-direction: column;
+        }
+
+        .founderImgContainer {
+            width: 60%;
+        }
+
+        .plantedFounderInfo {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+    .gallerySection ul {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            width: 75%;
+        }
+    }
+}
 
 // MEDIA QUERY FOR NAV BAR
 @media (max-width: 750px) {
