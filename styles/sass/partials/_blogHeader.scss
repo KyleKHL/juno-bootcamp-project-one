@@ -19,16 +19,18 @@
     background-size: cover;
     height: 50vh;
     min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     
+    .blogPageTitleContainer {
+        height: calc(100% - 44px);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
 
-    h1 {
-        @include primaryFont(4rem);
-        font-weight: bold;
-        line-height: 92px;
-        color: $secondaryColor;
-        margin-bottom: 80px;
+        h1 {
+            @include primaryFont(4rem);
+            font-weight: bold;
+            line-height: 92px;
+            color: $secondaryColor;
+        }
     }
 }

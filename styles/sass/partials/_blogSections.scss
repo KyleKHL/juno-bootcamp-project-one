@@ -100,13 +100,14 @@ section.sideBar h3 {
     @include primaryFont(2.15rem);
     font-weight: bold;
     letter-spacing: 1.3px;
-    margin-bottom: 10px;
+    line-height: 46px;
 }
 
 .missionArticleContainer .articleAuthor {
     color: $headingColor;
     font-style: italic;
     margin-bottom: 50px;
+    margin-top: 0;
 }
 
 .missionArticleContainer .articleAuthor span {
@@ -174,7 +175,7 @@ section.sideBar h3 {
         padding-bottom: 30px;
 
         input {
-            flex-basis: 48%;
+            width: 48%;
             background-color: $primaryColor;
             border: none;
             border-bottom: $tertiaryColor solid 2px;

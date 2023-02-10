@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    min-height: 400px;
+    min-height: 600px;
     margin: 0 auto;
     position: relative;
 
@@ -35,7 +35,7 @@
 }
 
 .homeHeaderTextContainer {
-    height: 100%;
+    height: calc(100% - 44px);
     min-height: 400px;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@
         color: $primaryColor;
         line-height: 125px;
         z-index: 10;
-        @include primaryFont(8.3rem)
+        @include primaryFont(8.3rem);
     }
 
     span {

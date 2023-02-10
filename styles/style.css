@@ -352,7 +352,7 @@ footer p {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  min-height: 400px;
+  min-height: 600px;
   margin: 0 auto;
   position: relative;
 }
@@ -375,7 +375,7 @@ footer p {
 }
 
 .homeHeaderTextContainer {
-  height: 100%;
+  height: calc(100% - 44px);
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,6 +429,7 @@ section.aboutUs h2 {
   padding: 0;
   font-weight: bold;
   letter-spacing: 1.3px;
+  line-height: 92px;
 }
 section.aboutUs p {
   text-align: center;
@@ -532,12 +533,12 @@ section.discoverUpcoming {
   width: 100%;
 }
 
-section.infoSection {
+section.fourPartInfoSection {
   background-color: #F0EFED;
   padding-top: 150px;
   padding-bottom: 75px;
 }
-section.infoSection .wrapper {
+section.fourPartInfoSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,6 +559,7 @@ section.infoSection .wrapper {
 .infoContainer a {
   padding-right: 20px;
   padding-top: 0;
+  height: 55px;
 }
 .infoContainer a i {
   font-size: 1.25rem;
@@ -601,12 +603,14 @@ section.founderSection .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-section.founderSection .wrapper .founderImgContainer {
+
+.founderImgContainer {
   width: 25%;
   -webkit-box-shadow: 15px 15px #F8E71C;
           box-shadow: 15px 15px #F8E71C;
 }
-section.founderSection .wrapper .plantedFounderInfo {
+
+.plantedFounderInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,7 +627,6 @@ section.founderSection .wrapper .plantedFounderInfo {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .plantedFounderInfo h5 {
   font-size: 2.1rem;
   font-family: "Josefin Sans", sans-serif;
@@ -664,18 +667,20 @@ section.founderSection .wrapper .plantedFounderInfo {
   background-size: cover;
   height: 50vh;
   min-height: 250px;
+}
+.blogHeader .blogPageTitleContainer {
+  height: calc(100% - 44px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.blogHeader h1 {
+.blogHeader .blogPageTitleContainer h1 {
   font-size: 4rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -684,7 +689,6 @@ section.founderSection .wrapper .plantedFounderInfo {
   font-weight: bold;
   line-height: 92px;
   color: #F8E71C;
-  margin-bottom: 80px;
 }
 
 .blogWrapper1 {
@@ -797,13 +801,14 @@ section.sideBar h3 {
   padding: 0;
   font-weight: bold;
   letter-spacing: 1.3px;
-  margin-bottom: 10px;
+  line-height: 46px;
 }
 
 .missionArticleContainer .articleAuthor {
   color: #074115;
   font-style: italic;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .missionArticleContainer .articleAuthor span {
@@ -891,8 +896,7 @@ section.sideBar h3 {
   padding-bottom: 30px;
 }
 .blogForm .blogFormNameEmailContainer input {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  width: 48%;
   background-color: #F0EFED;
   border: none;
   border-bottom: #0E902D solid 2px;
@@ -922,17 +926,19 @@ section.sideBar h3 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  min-height: 400px;
+  min-height: 300px;
+}
+.contactPageHeader .contactPageTitleContainer {
+  height: calc(100% - 44px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .contactPageHeader nav {
   background-color: black;
@@ -951,7 +957,6 @@ section.sideBar h3 {
   line-height: 92px;
   color: #F8E71C;
   width: 250px;
-  margin-bottom: 15px;
 }
 
 section.contactSection {
@@ -1039,4 +1044,185 @@ section.contactSection .wrapper .contactInfo {
   text-decoration: none;
   padding-left: 20px;
   padding-top: 40px;
+}
+
+@media (max-width: 950px) {
+  .contactPageHeader {
+    height: 70vh;
+  }
+  .contactPageHeader nav {
+    background-color: transparent;
+  }
+  .contactPageHeader .contactPageTitleContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactHeaderContainer h1 {
+    width: auto;
+    text-align: center;
+  }
+  section.contactSection {
+    padding-top: 75px;
+  }
+  section.contactSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.contactSection .wrapper .contactPageForm {
+    position: inherit;
+    width: 100%;
+  }
+  section.contactSection .wrapper .contactInfo {
+    width: 100%;
+  }
+  .contactPageForm .nameEmailContactForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contactPageForm .nameEmailContactForm input {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .homePageHeader .leafyBackground {
+    height: 65%;
+  }
+  .homeHeaderTextContainer h1 {
+    font-size: 4rem;
+  }
+  section.discoverUpcoming {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.discoverUpcoming .discoverContainer, section.discoverUpcoming .upcomingContainer {
+    width: 100%;
+  }
+  section.discoverUpcoming .discoverInfo, section.discoverUpcoming .upcomingInfo {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section.discoverUpcoming .upcomingInfo {
+    margin-bottom: 50px;
+  }
+  section.fourPartInfoSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+  }
+  section.fourPartInfoSection .infoContainer {
+    margin-bottom: 20px 0;
+  }
+  section.founderSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.founderSection .founderImgContainer {
+    width: 60%;
+  }
+  section.founderSection .plantedFounderInfo {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .gallerySection ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallerySection ul li {
+    width: 75%;
+  }
+}
+@media (max-width: 850px) {
+  .blogHeader .blogPageTitleContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogHeader nav {
+    background-color: transparent;
+  }
+  .divider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .missionSection {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .jeremyComment, .juliaComment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jeremyComment .profileImgContainer, .juliaComment .profileImgContainer {
+    margin-bottom: 10px;
+  }
+  .blogForm .blogFormNameEmailContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  .blogForm .blogFormNameEmailContainer input {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  section.sideBar {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+  .homeHeaderTextContainer {
+    height: calc(100% - 198px);
+  }
+  .blogHeader .blogPageTitleContainer {
+    height: calc(100% - 198px);
+  }
+  .contactPageHeader .contactPageTitleContainer {
+    height: calc(100% - 188px);
+  }
 }
