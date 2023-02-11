@@ -1,5 +1,6 @@
-// CONTACT FORM MEDIA QUERY
+// MEDIA QUERY AT 950PX
 @media (max-width: 950px) {
+    // CONTACT FORM MEDIA QUERY
     .contactPageHeader{
         height: 70vh;
         nav {
@@ -12,7 +13,6 @@
     }
 
     .contactHeaderContainer {
-
         h1 {
             width: auto;
             text-align: center;
@@ -44,8 +44,98 @@
     }
 }
 
-// MEDIA QUERY FOR BLOG PAGE
+// MEDIA QUERY AT 750PX
 @media (max-width: 750px){
+    //MEDIA QUERY FOR THE NAV BAR and title containers on various pages
+    header nav ul {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+    
+        // HEADER PAGE -title container height
+        .homeHeaderTextContainer {
+            height: calc(100% - 198px);
+        }
+    
+        // BLOG PAGE -title container height
+        .blogHeader .blogPageTitleContainer {
+            height: calc(100% - 198px);
+        }
+    
+        // CONTACT PAGE -title container height
+        .contactPageHeader .contactPageTitleContainer {
+            height: calc(100% - 188px);
+        }
+
+    // **********END OF CHANGES TO NAV BAR & title containers********
+
+    // *******HOME PAGE PAGE*********
+    .homePageHeader {
+        .leafyBackground {
+            height: 65%;
+        }
+    }
+
+    .homeHeaderTextContainer h1 {
+        font-size: 4rem;
+    }
+
+    section.discoverUpcoming {
+        flex-direction: column;
+        .discoverContainer,
+        .upcomingContainer {
+            width: 100%;
+        }
+        .discoverInfo,
+        .upcomingInfo {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+        .upcomingInfo {
+            margin-bottom: 50px;
+        }
+    }
+
+    section.fourPartInfoSection {
+        .wrapper {
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        .infoContainer {
+            margin-bottom: 20px 0;
+        }
+    }
+
+    section.founderSection {
+        .wrapper {
+            flex-direction: column;
+        }
+        .founderImgContainer {
+            width: 60%;
+        }
+        .plantedFounderInfo {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+    .plantGallery ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+            width: 75%;
+        }
+    }
+    // **********END OF HOME PAGE***********
+
+    // ***********BLOG PAGE****************
     .blogHeader .blogPageTitleContainer {
         justify-content: center;
         align-items: center;
@@ -56,19 +146,19 @@
     }
     
     .divider{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
-    .missionSection {
+    .plantedMissionSection {
         margin-top: 50px;
         width: 100%;
+        .ourMissionContainer {
+            margin-left: 0;
+        }
     }
 
-    .ourMissionContainer {
-        margin-left: 0;
-    }
-
-    .jeremyComment, .juliaComment {
+    .jeremyComment, 
+    .juliaComment {
         flex-direction: column;
         .profileImgContainer {
             margin-bottom: 10px;
@@ -83,131 +173,10 @@
             margin-bottom: 25px;
         }
     }
-    // SIDEBAR SECTION
-    section.sideBar {
+    // SIDEBAR OF BLOG PAGE
+    aside.sideBar {
         width: 100%;
         margin-bottom: 50px;
     }
-}
-
-
-@media (max-width: 750px) {
-    // MEDIA QUERY FOR THE NAV BAR on various pages
-    header nav ul {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    // HEADER PAGE -title container height
-    .homeHeaderTextContainer {
-        height: calc(100% - 198px);
-    }
-
-    // BLOG PAGE -title container height
-    .blogHeader .blogPageTitleContainer {
-        height: calc(100% - 198px);
-    }
-
-    // CONTACT PAGE -title container height
-    .contactPageHeader .contactPageTitleContainer {
-        height: calc(100% - 188px);
-    }
-
-// HOME PAGE MEDIA QUERY*****************
-    .homePageHeader {
-        .leafyBackground {
-            height: 65%;
-        }
-    }
-
-    .homeHeaderTextContainer h1 {
-        font-size: 4rem;
-    }
-
-    section.discoverUpcoming {
-        flex-direction: column;
-
-        .discoverContainer,
-        .upcomingContainer {
-            width: 100%;
-        }
-
-        .discoverInfo,
-        .upcomingInfo {
-            width: 100%;
-            max-width: 90%;
-            margin: 0 auto;
-            align-items: center;
-            text-align: center;
-        }
-
-        .upcomingInfo {
-            margin-bottom: 50px;
-        }
-
-    }
-
-    section.fourPartInfoSection {
-        .wrapper {
-            flex-direction: column;
-            padding-top: 50px;
-        }
-
-        .infoContainer {
-            margin-bottom: 20px 0;
-        }
-    }
-
-    section.founderSection {
-        .wrapper {
-            flex-direction: column;
-        }
-
-        .founderImgContainer {
-            width: 60%;
-        }
-
-        .plantedFounderInfo {
-            width: 100%;
-            align-items: center;
-            text-align: center;
-            margin-top: 50px;
-        }
-    }
-
-    .plantGallery ul {
-        flex-direction: column;
-        align-items: center;
-
-        li {
-            width: 75%;
-        }
-    }
-}
-
-// MEDIA QUERY FOR NAV BAR
-@media (max-width: 750px) {
-
-    header nav ul {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-    // HEADER PAGE
-    .homeHeaderTextContainer {
-        height: calc(100% - 198px);
-    }
-
-    // BLOG PAGE
-    .blogHeader .blogPageTitleContainer {
-        height: calc(100% - 198px);
-    }
-
-    // CONTACT PAGE
-    .contactPageHeader .contactPageTitleContainer {
-        height: calc(100% - 188px);
-    }
+    // ********END OF BLOG PAGE **********
 }

@@ -12,4 +12,13 @@ button {
     color: $primaryColor;
     padding: 10px 25px;
     border: none;
+    // BUTTON ANIMATIONS
+    transition: ease-out 0.5s;
+}
+
+button:hover,
+button:focus {
+    background-color: $secondaryColor;
+    color: black;
+    border: 2px;
 }

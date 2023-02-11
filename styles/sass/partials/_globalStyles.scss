@@ -31,13 +31,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: $secondaryColor;
-}
-
-a:focus {
-    outline: 2px solid $secondaryColor;
-    border-radius: 0.5rem;
+a:hover, a:focus {
     color: $secondaryColor;
 }
 

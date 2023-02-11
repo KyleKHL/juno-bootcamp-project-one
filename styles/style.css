@@ -263,13 +263,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #F8E71C;
-}
-
-a:focus {
-  outline: 2px solid #F8E71C;
-  border-radius: 0.5rem;
+a:hover, a:focus {
   color: #F8E71C;
 }
 
@@ -327,6 +321,15 @@ button {
   color: #F0EFED;
   padding: 10px 25px;
   border: none;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+
+button:hover,
+button:focus {
+  background-color: #F8E71C;
+  color: black;
+  border: 2px;
 }
 
 footer {
@@ -558,7 +561,7 @@ section.fourPartInfoSection .wrapper {
       flex-basis: 47%;
 }
 .infoContainer a {
-  padding-right: 20px;
+  margin-right: 20px;
   padding-top: 0;
   height: 55px;
 }
@@ -566,8 +569,16 @@ section.fourPartInfoSection .wrapper {
   font-size: 1.25rem;
   background-color: #F8E71C;
   color: #2c2c2c;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   border: 15px solid #F8E71C;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+.infoContainer a i:hover,
+.infoContainer a i:focus {
+  color: #F0EFED;
+  background-color: #0E902D;
+  border-color: #0E902D;
 }
 .infoContainer .infoText {
   display: -webkit-box;
@@ -697,78 +708,25 @@ section.founderSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.blogWrapper1 {
-  width: 100%;
-  max-width: 71.4285714286%;
-  margin: 0 auto;
-}
-
-section.sideBar {
-  margin-top: 125px;
-  height: 100%;
-  width: 35%;
-}
-
-.aboutPlanted a {
-  color: #074115;
-  font-weight: bold;
-  font-style: oblique;
-}
-
-section.sideBar h3 {
-  font-size: 1rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.sideBarTextContainer {
-  background-color: white;
-  padding: 40px 30px;
-  border-right: 10px solid white;
-}
-
-.sideBarImage {
-  width: 85.8%;
+.plantedMissionSection {
+  margin-top: -200px;
   z-index: 10;
-  border-right: solid white 10px;
-}
-
-.recentPosts {
-  margin-top: 50px;
-}
-
-.recentPosts ul {
-  padding-left: 20px;
-}
-
-.recentPosts ul li::before {
-  content: "•";
-  color: #0E902D;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1rem;
+  width: 65%;
 }
 
 .blogWrapper2 {
   width: 100%;
   max-width: 84.6153846154%;
   margin: 0 auto;
-}
-
-.missionSection {
-  margin-top: -200px;
-  z-index: 10;
-  width: 65%;
 }
 
 .ourMissionContainer {
@@ -792,7 +750,6 @@ section.sideBar h3 {
 .missionArticleContainer {
   padding: 75px 0 25px 0;
 }
-
 .missionArticleContainer h2 {
   font-size: 2.15rem;
   font-family: "Josefin Sans", sans-serif;
@@ -803,14 +760,12 @@ section.sideBar h3 {
   letter-spacing: 1.3px;
   line-height: 46px;
 }
-
 .missionArticleContainer .articleAuthor {
   color: #074115;
   font-style: italic;
   margin-bottom: 50px;
   margin-top: 0;
 }
-
 .missionArticleContainer .articleAuthor span {
   font-weight: bold;
 }
@@ -920,6 +875,60 @@ section.sideBar h3 {
   line-height: 32px;
 }
 
+.blogWrapper1 {
+  width: 100%;
+  max-width: 71.4285714286%;
+  margin: 0 auto;
+}
+
+aside.sideBar {
+  margin-top: 125px;
+  height: 100%;
+  width: 35%;
+}
+
+.sideBarImage {
+  width: 85.8%;
+  z-index: 10;
+  border-right: solid white 10px;
+}
+
+.sideBarTextContainer {
+  background-color: white;
+  padding: 40px 30px;
+  border-right: 10px solid white;
+}
+.sideBarTextContainer h3 {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.aboutPlanted a {
+  color: #074115;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.recentPosts {
+  margin-top: 50px;
+}
+.recentPosts ul {
+  padding-left: 20px;
+}
+.recentPosts ul li::before {
+  content: "•";
+  color: #0E902D;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1rem;
+}
+
 .contactPageHeader {
   background-image: url(..//..//assets/contact-header-1.jpg);
   background-position: center;
@@ -985,8 +994,16 @@ section.contactSection .wrapper .contactInfo {
 
 .socialMediaIcons i {
   color: #0E902D;
-  font-size: 1.2rem;
-  padding-right: 20px;
+  font-size: 1.5rem;
+  padding: 10px;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+.socialMediaIcons i:hover,
+.socialMediaIcons i:focus {
+  color: #F8E71C;
+  border-radius: 5rem;
+  background-color: #2c2c2c;
 }
 
 .contactPageForm {
@@ -1094,56 +1111,6 @@ section.contactSection .wrapper .contactInfo {
   }
 }
 @media (max-width: 750px) {
-  .blogHeader .blogPageTitleContainer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .blogHeader nav {
-    background-color: transparent;
-  }
-  .divider {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .missionSection {
-    margin-top: 50px;
-    width: 100%;
-  }
-  .ourMissionContainer {
-    margin-left: 0;
-  }
-  .jeremyComment, .juliaComment {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .jeremyComment .profileImgContainer, .juliaComment .profileImgContainer {
-    margin-bottom: 10px;
-  }
-  .blogForm .blogFormNameEmailContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 0;
-  }
-  .blogForm .blogFormNameEmailContainer input {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  section.sideBar {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-}
-@media (max-width: 750px) {
   header nav ul {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -1232,26 +1199,54 @@ section.contactSection .wrapper .contactInfo {
   .plantGallery ul li {
     width: 75%;
   }
-}
-@media (max-width: 750px) {
-  header nav ul {
-    width: 100%;
+  .blogHeader .blogPageTitleContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogHeader nav {
+    background-color: transparent;
+  }
+  .divider {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5px;
   }
-  .homeHeaderTextContainer {
-    height: calc(100% - 198px);
+  .plantedMissionSection {
+    margin-top: 50px;
+    width: 100%;
   }
-  .blogHeader .blogPageTitleContainer {
-    height: calc(100% - 198px);
+  .plantedMissionSection .ourMissionContainer {
+    margin-left: 0;
   }
-  .contactPageHeader .contactPageTitleContainer {
-    height: calc(100% - 188px);
+  .jeremyComment,
+  .juliaComment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jeremyComment .profileImgContainer,
+  .juliaComment .profileImgContainer {
+    margin-bottom: 10px;
+  }
+  .blogForm .blogFormNameEmailContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  .blogForm .blogFormNameEmailContainer input {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  aside.sideBar {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }

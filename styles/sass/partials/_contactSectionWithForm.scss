@@ -5,11 +5,9 @@
 // CONTACT SECTION
 section.contactSection {
     background-color: $primaryColor;
-
     .wrapper {
         display: flex;
         justify-content: space-between;
-
         .contactInfo {
             display: flex;
             flex-direction: column;
@@ -20,10 +18,20 @@ section.contactSection {
     }
 }
 
-.socialMediaIcons i {
-    color: $tertiaryColor;
-    font-size: 1.2rem;
-    padding-right: 20px;
+.socialMediaIcons {
+    i {
+        color: $tertiaryColor;
+        font-size: 1.5rem;
+        padding: 10px;
+        transition: ease-out 0.5s;
+    }
+
+    i:hover,
+    i:focus {
+        color: $secondaryColor;
+        border-radius: 5rem;
+        background-color: #2c2c2c;
+    }
 }
 
 // FORM STARTS
@@ -36,30 +44,25 @@ section.contactSection {
     padding: 70px 40px;
     position: relative;
     top: -225px;
-
     label {
         display: none;
     }
-
     input {
         @include primaryFont(1rem);
         line-height: 32px;
         border: none;
         border-bottom: solid 2px $tertiaryColor;
     }
-
     .nameEmailContactForm {
         display: flex;
         justify-content: space-between;
         padding-bottom: 40px;
-
         input {
             width: 48%;
             padding-left: 20px;
             padding-bottom: 30px;
         }
     }
-
     textarea {
         border: 2px solid $tertiaryColor;
         @include primaryFont(1rem);

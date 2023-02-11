@@ -5,7 +5,6 @@
 // BLACK BACKGROUND TO NAV
 .blogHeader nav {
     background-color: black;
-
     li:nth-child(4) a {
         color: $secondaryColor;
     }
@@ -19,13 +18,11 @@
     background-size: cover;
     height: 50vh;
     min-height: 250px;
-    
     .blogPageTitleContainer {
         height: calc(100% - 44px);
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
-
         h1 {
             @include primaryFont(4rem);
             font-weight: bold;

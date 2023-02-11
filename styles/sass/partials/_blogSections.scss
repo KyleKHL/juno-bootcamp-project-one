@@ -2,79 +2,26 @@
 @use './variables' as *;
 // VARIABLES
 
-// BLOG WRAPPER
+// DIVIDER USED TO FLEX
 .divider {
     background-color: $primaryColor;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
-.blogWrapper1 {
-    width: 100%;
-    max-width: calc((100% - ((10% / 35%) * 100%)));
-    margin: 0 auto;
-}
-
-section.sideBar {
-    margin-top: 125px;
-    height: 100%;
-    width: 35%;
-}
-
-.aboutPlanted a {
-    color: $headingColor;
-    font-weight: bold;
-    font-style: oblique;
-}
-
-section.sideBar h3 {
-    @include primaryFont(1rem);
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.sideBarTextContainer {
-    background-color: $sideBarColor;
-    padding: 40px 30px;
-    border-right: 10px solid $sideBarColor;
-}
-
-.sideBarImage {
-    width: 85.8%;
-    z-index: 10;
-    border-right: solid $sideBarColor 10px;
-}
-
-.recentPosts {
-    margin-top: 50px;
-}
-
-.recentPosts ul {
-    padding-left: 20px;
-}
-
-.recentPosts ul li::before {
-    content: "\2022";
-    color: $tertiaryColor;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1rem;
-}
-// END OF SIDEBAR SECTION
 // MISSION SECTION BEGINS
+.plantedMissionSection {
+    margin-top: -200px;
+    z-index: 10;
+    width: 65%;
+}
 
 // BLOG WRAPPER 2
 .blogWrapper2 {
     width: 100%;
     max-width: calc((100% - ((10% / 65%) * 100%)));
     margin: 0 auto;
-}
-
-.missionSection {
-    margin-top: -200px;
-    z-index: 10;
-    width: 65%;
 }
 
 .ourMissionContainer {
@@ -91,26 +38,23 @@ section.sideBar h3 {
 
 .missionArticleContainer {
     padding: 75px 0 25px 0;
-}
-
-.missionArticleContainer h2 {
+    h2 {
     @include primaryFont(2.15rem);
     font-weight: bold;
     letter-spacing: 1.3px;
     line-height: 46px;
-}
-
-.missionArticleContainer .articleAuthor {
+    }
+    .articleAuthor {
     color: $headingColor;
     font-style: italic;
     margin-bottom: 50px;
     margin-top: 0;
+        span {
+        font-weight: bold;
+        }
+    }
 }
-
-.missionArticleContainer .articleAuthor span {
-    font-weight: bold;
-}
-// END OF MISSIONS SECTION
+// END OF MISSION ARTICLE SECTION
 
 // COMMENT SECTION
 .commentSection {
@@ -127,17 +71,14 @@ section.sideBar h3 {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-
     .profileImgContainer {
         width: 15%;
         min-width: 100px;
     }
-
     .commentText {
         display: flex;
         flex-direction: column;
         width: 70%;
-
         h5 {
             @include primaryFont(1rem);
             color: $headingColor;
@@ -159,16 +100,13 @@ section.sideBar h3 {
 .blogForm {
     display: flex;
     flex-direction: column;
-
     label {
         display: none;
     }
-
     .blogFormNameEmailContainer {
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;
-
         input {
             width: 48%;
             background-color: $primaryColor;
@@ -179,7 +117,6 @@ section.sideBar h3 {
             padding-bottom: 25px;
         }
     }
-
     textarea {
         @include primaryFont(1rem);
         padding-top: 40px;
@@ -188,3 +125,55 @@ section.sideBar h3 {
         line-height: 32px;
     }
 }
+
+// ASIDE SIDEBAR SECTION
+.blogWrapper1 {
+    width: 100%;
+    max-width: calc((100% - ((10% / 35%) * 100%)));
+    margin: 0 auto;
+}
+
+aside.sideBar {
+    margin-top: 125px;
+    height: 100%;
+    width: 35%;
+}
+
+.sideBarImage {
+    width: 85.8%;
+    z-index: 10;
+    border-right: solid $sideBarColor 10px;
+}
+
+.sideBarTextContainer {
+    background-color: $sideBarColor;
+    padding: 40px 30px;
+    border-right: 10px solid $sideBarColor;
+    h3 {
+    @include primaryFont(1rem);
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+}
+
+.aboutPlanted a {
+    color: $headingColor;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.recentPosts {
+    margin-top: 50px;
+    ul {
+        padding-left: 20px;
+        li::before {
+            content: "\2022";
+            color: $tertiaryColor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1rem;
+        }
+    }
+}
+// END OF SIDEBAR SECTION

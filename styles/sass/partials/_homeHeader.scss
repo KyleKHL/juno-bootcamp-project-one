@@ -12,15 +12,12 @@
     min-height: 600px;
     margin: 0 auto;
     position: relative;
-
     .wrapper {
         height: 100%;
     }
-
     nav ul li:nth-child(2) a {
-            color: $secondaryColor;
-        }
-
+        color: $secondaryColor;
+    }
     .leafyBackground {
         background-image: url(..//..//assets/header-box.jpg);
         background-repeat: no-repeat;
@@ -40,18 +37,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     h1 {
         color: $primaryColor;
         line-height: 125px;
         z-index: 10;
         @include primaryFont(8.3rem);
     }
-
     span {
         display: block;
         color: $secondaryColor;
     }
 }
-
-
