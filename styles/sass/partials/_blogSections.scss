@@ -60,7 +60,7 @@
 .commentSection {
     background-color: $primaryColor;
     margin-top: 50px;
-    h4{
+    h3{
         @include primaryFont(1.6rem);
         font-weight: bold;
     }
@@ -79,7 +79,7 @@
         display: flex;
         flex-direction: column;
         width: 70%;
-        h5 {
+        h4 {
             @include primaryFont(1rem);
             color: $headingColor;
             font-weight: bold;
@@ -100,9 +100,6 @@
 .blogForm {
     display: flex;
     flex-direction: column;
-    label {
-        display: none;
-    }
     .blogFormNameEmailContainer {
         display: flex;
         justify-content: space-between;
@@ -149,7 +146,7 @@ aside.sideBar {
     background-color: $sideBarColor;
     padding: 40px 30px;
     border-right: 10px solid $sideBarColor;
-    h3 {
+    h5 {
     @include primaryFont(1rem);
     font-weight: bold;
     letter-spacing: 1px;

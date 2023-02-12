@@ -574,8 +574,8 @@ section.fourPartInfoSection .wrapper {
   -webkit-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
 }
-.infoContainer a i:hover,
-.infoContainer a i:focus {
+.infoContainer a:hover i,
+.infoContainer a:focus i {
   color: #F0EFED;
   background-color: #0E902D;
   border-color: #0E902D;
@@ -774,7 +774,7 @@ section.founderSection .wrapper {
   background-color: #F0EFED;
   margin-top: 50px;
 }
-.commentSection h4 {
+.commentSection h3 {
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -809,8 +809,8 @@ section.founderSection .wrapper {
           flex-direction: column;
   width: 70%;
 }
-.jeremyComment .commentText h5,
-.juliaComment .commentText h5 {
+.jeremyComment .commentText h4,
+.juliaComment .commentText h4 {
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -837,9 +837,6 @@ section.founderSection .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.blogForm label {
-  display: none;
 }
 .blogForm .blogFormNameEmailContainer {
   display: -webkit-box;
@@ -898,7 +895,7 @@ aside.sideBar {
   padding: 40px 30px;
   border-right: 10px solid white;
 }
-.sideBarTextContainer h3 {
+.sideBarTextContainer h5 {
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -999,8 +996,9 @@ section.contactSection .wrapper .contactInfo {
   -webkit-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
 }
-.socialMediaIcons i:hover,
-.socialMediaIcons i:focus {
+
+.socialMediaIcons a:hover i,
+.socialMediaIcons a:focus i {
   color: #F8E71C;
   border-radius: 5rem;
   background-color: #2c2c2c;
@@ -1021,9 +1019,6 @@ section.contactSection .wrapper .contactInfo {
   padding: 70px 40px;
   position: relative;
   top: -225px;
-}
-.contactPageForm label {
-  display: none;
 }
 .contactPageForm input {
   font-size: 1rem;

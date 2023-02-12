@@ -111,13 +111,15 @@ section.fourPartInfoSection {
             border: 15px solid $secondaryColor;
             transition: ease-out 0.5s;
         }
-        i:hover,
-        i:focus {
+    }
+    a:hover,
+    a:focus {
+        i {
             color: $primaryColor;
             background-color: $tertiaryColor;
             border-color: $tertiaryColor;
         }
-}
+    }
     .infoText {
         display: flex;
         flex-direction: column;
