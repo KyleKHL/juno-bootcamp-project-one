@@ -464,7 +464,7 @@ section.discoverUpcoming {
   position: relative;
   top: -30px;
 }
-.discoverContainer .colourfulFlowerImgContainer {
+.discoverContainer .vividFlowerImgContainer {
   -webkit-box-shadow: 20px 20px #F8E71C;
           box-shadow: 20px 20px #F8E71C;
   width: 100%;
@@ -717,7 +717,7 @@ section.founderSection .wrapper {
           justify-content: space-between;
 }
 
-.plantedMissionSection {
+.plantedMissionMain {
   margin-top: -200px;
   z-index: 10;
   width: 65%;
@@ -729,7 +729,7 @@ section.founderSection .wrapper {
   margin: 0 auto;
 }
 
-.ourMissionContainer {
+.missionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,6 +870,8 @@ section.founderSection .wrapper {
   padding-left: 35px;
   margin-bottom: 30px;
   line-height: 32px;
+  width: 100%;
+  resize: none;
 }
 
 .blogWrapper1 {
@@ -878,24 +880,24 @@ section.founderSection .wrapper {
   margin: 0 auto;
 }
 
-aside.sideBar {
+aside.sidebar {
   margin-top: 125px;
   height: 100%;
   width: 35%;
 }
 
-.sideBarImage {
+.sidebarImage {
   width: 85.8%;
   z-index: 10;
   border-right: solid white 10px;
 }
 
-.sideBarTextContainer {
+.sidebarTextContainer {
   background-color: white;
   padding: 40px 30px;
   border-right: 10px solid white;
 }
-.sideBarTextContainer h5 {
+.sidebarTextContainer h5 {
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -1056,6 +1058,8 @@ section.contactSection .wrapper .contactInfo {
   text-decoration: none;
   padding-left: 20px;
   padding-top: 40px;
+  width: 100%;
+  resize: none;
 }
 
 @media (max-width: 950px) {
@@ -1211,11 +1215,11 @@ section.contactSection .wrapper .contactInfo {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .plantedMissionSection {
+  .plantedMissionMain {
     margin-top: 50px;
     width: 100%;
   }
-  .plantedMissionSection .ourMissionContainer {
+  .plantedMissionMain .missionContainer {
     margin-left: 0;
   }
   .jeremyComment,
@@ -1240,7 +1244,7 @@ section.contactSection .wrapper .contactInfo {
     width: 100%;
     margin-bottom: 25px;
   }
-  aside.sideBar {
+  aside.sidebar {
     width: 100%;
     margin-bottom: 50px;
   }

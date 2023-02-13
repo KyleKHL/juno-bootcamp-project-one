@@ -11,7 +11,7 @@
 }
 
 // MISSION SECTION BEGINS
-.plantedMissionSection {
+.plantedMissionMain {
     margin-top: -200px;
     z-index: 10;
     width: 65%;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 
-.ourMissionContainer {
+.missionContainer {
     display: flex;
     flex-direction: column;
     border-left: 5px solid $secondaryColor;
@@ -120,6 +120,8 @@
         padding-left: 35px;
         margin-bottom: 30px;
         line-height: 32px;
+        width: 100%;
+        resize: none;
     }
 }
 
@@ -130,19 +132,19 @@
     margin: 0 auto;
 }
 
-aside.sideBar {
+aside.sidebar {
     margin-top: 125px;
     height: 100%;
     width: 35%;
 }
 
-.sideBarImage {
+.sidebarImage {
     width: 85.8%;
     z-index: 10;
     border-right: solid $sideBarColor 10px;
 }
 
-.sideBarTextContainer {
+.sidebarTextContainer {
     background-color: $sideBarColor;
     padding: 40px 30px;
     border-right: 10px solid $sideBarColor;

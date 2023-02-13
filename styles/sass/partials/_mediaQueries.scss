@@ -1,4 +1,4 @@
-// MEDIA QUERY AT 950PX
+// MEDIA QUERY AT 950PX FOR CONTACT FORM
 @media (max-width: 950px) {
     // CONTACT FORM MEDIA QUERY
     .contactPageHeader{
@@ -43,6 +43,7 @@
         }
     }
 }
+// END OF MEDIA QUERY AT 950PX
 
 // MEDIA QUERY AT 750PX
 @media (max-width: 750px){
@@ -71,7 +72,7 @@
 
     // **********END OF CHANGES TO NAV BAR & title containers********
 
-    // *******HOME PAGE PAGE*********
+    // *******HOME/INDEX PAGE*********
     .homePageHeader {
         .leafyBackground {
             height: 65%;
@@ -149,10 +150,10 @@
         flex-direction: column;
     }
     
-    .plantedMissionSection {
+    .plantedMissionMain {
         margin-top: 50px;
         width: 100%;
-        .ourMissionContainer {
+        .missionContainer {
             margin-left: 0;
         }
     }
@@ -174,7 +175,7 @@
         }
     }
     // SIDEBAR OF BLOG PAGE
-    aside.sideBar {
+    aside.sidebar {
         width: 100%;
         margin-bottom: 50px;
     }

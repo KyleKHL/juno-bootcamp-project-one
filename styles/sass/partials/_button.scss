@@ -15,7 +15,7 @@ button {
     // BUTTON ANIMATIONS
     transition: ease-out 0.5s;
 }
-
+// BUTTON HOVER/FOCUS
 button:hover,
 button:focus {
     background-color: $secondaryColor;

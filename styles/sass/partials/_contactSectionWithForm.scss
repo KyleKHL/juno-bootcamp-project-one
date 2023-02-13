@@ -25,7 +25,7 @@ section.contactSection {
     transition: ease-out 0.5s;
 }
 
-.socialMediaIcons a:hover,
+.socialMediaIcons a:hover, 
 .socialMediaIcons a:focus {
     i {
         color: $secondaryColor;
@@ -68,5 +68,7 @@ section.contactSection {
         text-decoration: none;
         padding-left: 20px;
         padding-top: 40px;
+        width: 100%;
+        resize: none;
     }
 }

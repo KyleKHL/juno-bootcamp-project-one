@@ -17,33 +17,33 @@
 <body>
     <!-- HEADER -->
     <header class="blogHeader">
-        <!-- START OF NAV -->
-        <nav>
-            <div class="wrapper">
+        <nav> <!-- START OF NAV -->
+            <div class="wrapper"> <!--START OF WRAPPER-->
                 <ul>
                     <p class="logo">Planted</p>
-                    <li><a href="./index.html" target="_blank">Home</a></li>
-                    <li><a href="./index.html#aboutUs" target="_blank">About</a></li>
-                    <li><a href="./blog.html" target="_blank">Blog</a></li>
-                    <li><a href="./contact.html" target="_blank">Contact</a></li>
+                    <li><a aria-label="open link in a new tab" href="./index.html" target="_blank">Home</a></li>
+                    <li><a aria-label="open link in a new tab" href="./index.html#aboutUs" target="_blank">About</a></li>
+                    <li><a aria-label="open link in a new tab" href="./blog.html" target="_blank">Blog</a></li>
+                    <li><a aria-label="open link in a new tab" href="./contact.html" target="_blank">Contact</a></li>
                 </ul>
-            </div><!--END OF WRAPPER-->
-        </nav><!-- END OF NAV -->
+            </div> <!--END OF WRAPPER-->
+        </nav> <!-- END OF NAV -->
         <div class="wrapper blogPageTitleContainer">
             <h1>Blog</h1>
         </div>
     </header>
+    <!-- END OF HEADER -->
 
+    <!-- DIVIDER TO DIVIDE MAIN AND ASIDE SIDEBAR SECTIONS -->
     <div class="divider">
-    <!-- MAIN -->
-        <!-- START OF PLANTED MISSION SECTION-->
-        <main class="plantedMissionSection">
-            <section class="missionSection">
+        <!-- START OF PLANTED MISSION MAIN CONTENT-->
+        <main class="plantedMissionMain">
+            <section class="missionSection"> <!--START OF MISSION SECTION-->
                 <div class="postOurMissionImage"><img src="./assets/post-image.jpg"
                         alt="Several plant stems and leafs with a beige background"></div>
-                <div class="ourMissionContainer">
-                    <div class="blogWrapper2">
-                        <div class="missionArticleContainer">
+                <div class="missionContainer"> <!--MISSION CONTAINER-->
+                    <div class="blogWrapper2"> <!--START OF WRAPPER-->
+                        <div class="missionArticleContainer"> <!--MISSION ARTICLE CONTAINER-->
                             <h2>Our Mission at Planted</h2>
                             <p class="articleAuthor">Monday January 21st, 2019 by <span>Yousra</span></p>
                             <article>
@@ -54,10 +54,11 @@
                             </article>
                         </div> <!--END OF MISSION ARTICLE CONTAINER-->
                     </div> <!--END OF WRAPPER-->
-                </div> <!--END OF OUR MISSION CONTAINER-->
-                <!-- COMMENT SECTION -->
+                </div> <!--END OF MISSION CONTAINER-->
+                
+                <!-- COMMENT SECTION STARTS-->
                 <div class="commentSection">
-                    <div class="blogWrapper2">
+                    <div class="blogWrapper2"> <!--START OF WRAPPER-->
                         <div>
                             <h3>Comments</h3>
                         </div>
@@ -82,11 +83,12 @@
                                     mollitia fuga molestiae autem, itaque aperiam a harum? Veniam veritatis hic, consequuntur.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> <!--END OF WRAPPER-->
+                </div> <!-- END OF COMMENT SECTION-->
+
                 <!-- POST COMMENT/FORM SECTION -->
                 <div class="blogPostComment">
-                    <div class="blogWrapper2">
+                    <div class="blogWrapper2"> <!--START OF WRAPPER-->
                         <form action="#" method="post" name="commentForm" class="blogForm">
                             <div class="blogFormNameEmailContainer">
                                 <!-- NAME -->
@@ -98,7 +100,7 @@
                             </div>
                             <!-- COMMENT TEXT AREA-->
                             <label for="comment" class="sr-only">Comment</label>
-                            <textarea name="comment" id="comment" cols="80" rows="10" placeholder="Comment"></textarea>
+                            <textarea name="comment" id="comment" rows="10" placeholder="Comment"></textarea>
                             <!-- SUBMIT BUTTON -->
                             <button type="submit">Post Comment</button>
                         </form> <!--END OF FORM-->
@@ -106,14 +108,16 @@
                 </div> <!-- END OF COMMENT/FORM SECTION -->
             </section> <!--END OF MISSION SECTION-->
         </main>
+        <!-- END OF MAIN SECTION-->
+
         <!-- ASIDE SIDEBAR SECTION -->
-        <aside class="sideBar">
-            <div class="sideBarImage">
+        <aside class="sidebar">
+            <div class="sidebarImage">
                 <img src="./assets/side-bar-image.jpg" alt="The outside of old concrete building with brown wooden window">
             </div>
-            <div class="sideBarText">
-                <div class="blogWrapper1">
-                    <div class="sideBarTextContainer">
+            <div class="sidebarInfo"> <!--SIDEBAR INFO SECTION-->
+                <div class="blogWrapper1"> <!--START OF WRAPPER-->
+                    <div class="sidebarTextContainer"> <!--SIDEBAR TEXT CONTAINER-->
                         <div class="aboutPlanted">
                             <h5>About Planted</h5>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed in debitis labore? <a href="./index.html" target="_blank">Find out more.</a></p>
@@ -129,8 +133,8 @@
                         </div><!--END OF RECENT POSTS-->
                     </div><!--END OF SIDEBAR TEXT CONTAINER-->
                 </div><!--END OF WRAPPER-->
-            </div><!--END OF SIDEBAR TEXT DIV-->
-        </aside><!-- END OF SIDE BAR SECTION-->
+            </div><!--END OF SIDEBAR INFO DIV-->
+        </aside><!-- END OF SIDEBAR SECTION-->
     </div><!-- END OF DIVIDER-->
 
 
