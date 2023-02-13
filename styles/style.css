@@ -328,7 +328,7 @@ button {
 button:hover,
 button:focus {
   background-color: #F8E71C;
-  color: black;
+  color: #2c2c2c;
   border: 2px;
 }
 
@@ -647,6 +647,7 @@ section.founderSection .wrapper {
   padding: 0;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 46px;
 }
 
 .plantGallery {
@@ -1134,7 +1135,7 @@ section.contactSection .wrapper .contactInfo {
     height: 65%;
   }
   .homeHeaderTextContainer h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   section.discoverUpcoming {
     -webkit-box-orient: vertical;

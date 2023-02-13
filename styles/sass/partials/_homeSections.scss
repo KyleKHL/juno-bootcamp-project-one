@@ -106,7 +106,7 @@ section.fourPartInfoSection {
         i {
             font-size: 1.25rem;
             background-color: $secondaryColor;
-            color: #2c2c2c;
+            color: $basicFontColor;
             border-radius: 2.5rem;
             border: 15px solid $secondaryColor;
             transition: ease-out 0.5s;
@@ -160,6 +160,7 @@ section.founderSection {
         @include primaryFont(2.1rem);
         font-weight: bold;
         letter-spacing: 1px;
+        line-height: 46px;
     }
 }
 

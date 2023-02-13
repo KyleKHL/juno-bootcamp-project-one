@@ -19,6 +19,6 @@ button {
 button:hover,
 button:focus {
     background-color: $secondaryColor;
-    color: black;
+    color: $basicFontColor;
     border: 2px;
 }

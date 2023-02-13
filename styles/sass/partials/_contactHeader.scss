@@ -16,7 +16,7 @@
         align-items: flex-end;
     }
     nav {
-    background-color: black;
+    background-color: $navBarColor;
         li:nth-child(5) a {
             color: $secondaryColor;
         }
