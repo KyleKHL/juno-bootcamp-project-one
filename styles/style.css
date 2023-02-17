@@ -1063,6 +1063,11 @@ section.contactSection .wrapper .contactInfo {
   resize: none;
 }
 
+@media (max-width: 750px) {
+  nav {
+    background-color: rgba(44, 44, 44, 0.7);
+  }
+}
 @media (max-width: 950px) {
   .contactPageHeader {
     height: 70vh;

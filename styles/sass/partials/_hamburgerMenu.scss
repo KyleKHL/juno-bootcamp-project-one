@@ -1,0 +1,10 @@
+// VARIABLES
+@use './variables' as *;
+// VARIABLES
+
+@media (max-width: 750px){
+    nav {
+        background-color: rgba(44, 44, 44, 0.7);
+    }
+    
+}
