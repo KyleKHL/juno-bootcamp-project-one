@@ -50,7 +50,7 @@
     //MEDIA QUERY FOR THE NAV BAR and title containers on various pages
     header nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     header nav ul {
@@ -59,9 +59,7 @@
             flex-direction: column;
             align-items: center;
             gap: 5px;
-            li{
-                display: none;
-            }
+            display: none;
         }
 
     .logo {

@@ -1140,9 +1140,9 @@ section.contactSection .wrapper .contactInfo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   header nav ul {
     width: 100%;
@@ -1155,8 +1155,6 @@ section.contactSection .wrapper .contactInfo {
         -ms-flex-align: center;
             align-items: center;
     gap: 5px;
-  }
-  header nav ul li {
     display: none;
   }
   .logo {
