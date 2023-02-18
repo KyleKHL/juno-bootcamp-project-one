@@ -5,11 +5,13 @@
 .logo {
     @include primaryFont(2rem);
     color: $primaryColor;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 header nav {
     padding-top: 10px;
+    display: flex;
+    height: auto;
 
     ul {
         width: 50%;
@@ -22,5 +24,18 @@ header nav {
             padding: 10px;
             text-transform: uppercase;
         }
+    }
+}
+
+// NEW CODE FOR HAMBURGER MENU
+.hamburgerButton {
+    background-color: transparent;
+    display: none;
+    span {
+        background-color: white;
+        width: 40px;
+        height: 5px;
+        margin: 10px 0;
+        display: block;
     }
 }

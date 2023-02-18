@@ -280,11 +280,15 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
   color: #F0EFED;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 header nav {
   padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
 }
 header nav ul {
   width: 50%;
@@ -305,6 +309,18 @@ header nav ul a {
   color: #F0EFED;
   padding: 10px;
   text-transform: uppercase;
+}
+
+.hamburgerButton {
+  background-color: transparent;
+  display: none;
+}
+.hamburgerButton span {
+  background-color: white;
+  width: 40px;
+  height: 5px;
+  margin: 10px 0;
+  display: block;
 }
 
 button {
@@ -1067,6 +1083,10 @@ section.contactSection .wrapper .contactInfo {
   nav {
     background-color: rgba(44, 44, 44, 0.7);
   }
+  .hamburgerButton {
+    display: block;
+    height: 4rem;
+  }
 }
 @media (max-width: 950px) {
   .contactPageHeader {
@@ -1116,8 +1136,17 @@ section.contactSection .wrapper .contactInfo {
   }
 }
 @media (max-width: 750px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   header nav ul {
     width: 100%;
+    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1126,6 +1155,14 @@ section.contactSection .wrapper .contactInfo {
         -ms-flex-align: center;
             align-items: center;
     gap: 5px;
+  }
+  header nav ul li {
+    display: none;
+  }
+  .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 0;
   }
   .homeHeaderTextContainer {
     height: calc(100% - 198px);

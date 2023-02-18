@@ -48,12 +48,26 @@
 // MEDIA QUERY AT 750PX
 @media (max-width: 750px){
     //MEDIA QUERY FOR THE NAV BAR and title containers on various pages
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     header nav ul {
-            width: 100%;
+            width:100%;
+            margin-top: 100px;
             flex-direction: column;
             align-items: center;
             gap: 5px;
+            li{
+                display: none;
+            }
         }
+
+    .logo {
+        align-self: flex-start;
+        padding: 0;
+    }
     
         // HEADER PAGE -title container height
         .homeHeaderTextContainer {
