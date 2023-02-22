@@ -1,11 +1,12 @@
+// VARIABLES
+@use './variables' as *;
+// VARIABLES
+
 // MEDIA QUERY AT 950PX FOR CONTACT FORM
 @media (max-width: 950px) {
     // CONTACT FORM MEDIA QUERY
     .contactPageHeader{
         height: 70vh;
-        nav {
-            background-color: transparent;
-        }
         .contactPageTitleContainer {
             justify-content: center;
             align-items: center;
@@ -48,27 +49,57 @@
 // MEDIA QUERY AT 750PX
 @media (max-width: 750px){
     //MEDIA QUERY FOR THE NAV BAR and title containers on various pages
-    header nav ul {
+    header {
+        .wrapper {
+            flex-direction: column;
+        }
+        nav {
+            
+            flex-direction: column;
+            align-items: center;
+                .logo{
+                    margin-right: 0;
+                }
+                // hamburger button
+                .toggleHamburger {
+                    display: flex;
+                }
+                // hamburger button end
+                // menulinks
+                
+        }
+    }
+
+header nav ul {
             width: 100%;
             flex-direction: column;
             align-items: center;
             gap: 5px;
+        
+            li:hover {
+                background-color: $basicFontColor;
+                width: 100%;
+                text-align: center;
+            }
         }
+
+    .menuLinks {
+        display: none;
+    }
+        // // HEADER PAGE -title container height
+        // .homeHeaderTextContainer {
+        //     height: calc(100% - 198px);
+        // }
     
-        // HEADER PAGE -title container height
-        .homeHeaderTextContainer {
-            height: calc(100% - 198px);
-        }
-    
-        // BLOG PAGE -title container height
-        .blogHeader .blogPageTitleContainer {
-            height: calc(100% - 198px);
-        }
+        // // BLOG PAGE -title container height
+        // .blogHeader .blogPageTitleContainer {
+        //     height: calc(100% - 198px);
+        // }
     
         // CONTACT PAGE -title container height
-        .contactPageHeader .contactPageTitleContainer {
-            height: calc(100% - 188px);
-        }
+        // .contactPageHeader .contactPageTitleContainer {
+        //     height: calc(100% - 188px);
+        // }
     // **********END OF CHANGES TO NAV BAR & title containers********
 
     // *******HOME/INDEX PAGE*********
@@ -139,10 +170,6 @@
     .blogHeader .blogPageTitleContainer {
         justify-content: center;
         align-items: center;
-    }
-    
-    .blogHeader nav {
-        background-color: transparent;
     }
     
     .divider{

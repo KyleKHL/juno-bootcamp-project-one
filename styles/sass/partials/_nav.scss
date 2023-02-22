@@ -5,22 +5,47 @@
 .logo {
     @include primaryFont(2rem);
     color: $primaryColor;
-    padding-right: 10px;
+    margin-right: 70px;
 }
 
 header nav {
     padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $navBarColor;
 
-    ul {
+    .wrapper {
+        display: flex;
+    }
+    // hamburger button
+        .toggleHamburger {
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 24px;
+            .bar {
+                height: 3px;
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+            }
+        // End of hamburger button
+        }
+
+        ul {
         width: 50%;
         display: flex;
-        justify-content: space-between;
         gap: 30px;
-        a {
-            @include primaryFont(1rem);
-            color: $primaryColor;
-            padding: 10px;
-            text-transform: uppercase;
-        }
+            a {
+                @include primaryFont(1rem);
+                color: $primaryColor;
+                padding: 10px;
+                text-transform: uppercase;
+            }
     }
 }
