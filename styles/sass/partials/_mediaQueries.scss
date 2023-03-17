@@ -49,57 +49,42 @@
 // MEDIA QUERY AT 750PX
 @media (max-width: 750px){
     //MEDIA QUERY FOR THE NAV BAR and title containers on various pages
-    header {
-        .wrapper {
-            flex-direction: column;
-        }
         nav {
-            
             flex-direction: column;
-            align-items: center;
-                .logo{
-                    margin-right: 0;
-                }
-                // hamburger button
-                .toggleHamburger {
-                    display: flex;
-                }
-                // hamburger button end
-                // menulinks
-                
+            .logo {
+                margin-right: 0;
+            }
+            // hamburger button
+            .toggleHamburger {
+                display: flex;
+            }
+            // hamburger button end
         }
-    }
 
-header nav ul {
+        nav ul {
+            margin-top: 40px;
             width: 100%;
             flex-direction: column;
-            align-items: center;
-            gap: 5px;
-        
-            li:hover {
-                background-color: $basicFontColor;
+            justify-content: flex-start;
+            padding-bottom: 0;
+            gap: 0;
+            li{
                 width: 100%;
-                text-align: center;
+                a {
+                    display: block;
+                    padding: 20px 5% 20px 5%;
+                }
+                a:hover,
+                a:focus {
+                    background-color: $basicFontColor;
+                    transition: 100ms;
+                }
             }
         }
 
-    .menuLinks {
+    .menuContainer {
         display: none;
     }
-        // // HEADER PAGE -title container height
-        // .homeHeaderTextContainer {
-        //     height: calc(100% - 198px);
-        // }
-    
-        // // BLOG PAGE -title container height
-        // .blogHeader .blogPageTitleContainer {
-        //     height: calc(100% - 198px);
-        // }
-    
-        // CONTACT PAGE -title container height
-        // .contactPageHeader .contactPageTitleContainer {
-        //     height: calc(100% - 188px);
-        // }
     // **********END OF CHANGES TO NAV BAR & title containers********
 
     // *******HOME/INDEX PAGE*********

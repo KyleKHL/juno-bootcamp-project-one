@@ -6,35 +6,37 @@
     @include primaryFont(2rem);
     color: $primaryColor;
     margin-right: 70px;
+    margin-left: 5%;
 }
 
-header nav {
-    padding-top: 10px;
+nav {
+    display: flex;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: $navBarColor;
+    z-index: 30;
 
-    .wrapper {
-        display: flex;
-    }
     // hamburger button
         .toggleHamburger {
             position: absolute;
             top: .75rem;
-            right: 1rem;
-            display: none;
+            right: 5%;
             flex-direction: column;
             justify-content: space-between;
             width: 30px;
             height: 24px;
-            .bar {
-                height: 3px;
-                width: 100%;
-                background-color: white;
-                border-radius: 10px;
+            display: none;
+            color: $primaryColor;
+            i {
+                font-size: 1.6rem;
             }
         // End of hamburger button
+        }
+        .toggleHamburger:hover{
+            color: $secondaryColor;
+            transition: 300ms;
         }
 
         ul {

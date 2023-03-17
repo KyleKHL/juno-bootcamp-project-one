@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planted Home</title>
+    <title>Planted Company</title>
     <!-- LINK TO FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,25 +15,24 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+
+    <nav class="homePageNav"> <!-- START OF NAV -->
+        <p class="logo">Planted</p>
+        <div id="menuContainer" class="menuContainer">
+            <ul class="menu">
+                <li><a class="navLink" href="./index.html">Home</a></li>
+                <li><a class="navLink" href="#aboutUs">About</a></li>
+                <li><a class="navLink" href="./blog.html">Blog</a></li>
+                <li><a class="navLink" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <a href="#" id="hamburgerButton" class="toggleHamburger">
+            <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+        </a>
+    </nav><!-- END OF NAV -->
 <!-- HEADER -->
     <header class="homePageHeader">
-        <nav> <!-- START OF NAV -->
-            <div class="wrapper"> <!--START OF WRAPPER-->
-                <p class="logo">Planted</p>
-                <a href="#" class="toggleHamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-                <div class="menuLinks">
-                    <ul>
-                        <li><a aria-label="open link in a new tab" href="./index.html" target="_blank">Home</a></li>
-                        <li><a aria-label="open link in a new tab" href="#aboutUs" target="_blank">About</a></li>
-                        <li><a aria-label="open link in a new tab" href="./blog.html" target="_blank">Blog</a></li>
-                        <li><a aria-label="open link in a new tab" href="./contact.html" target="_blank">Contact</a></li>
-                    </ul>
-                </div>
-            </nav><!-- END OF NAV -->
+        <div class="wrapper">
             <div class="homeHeaderTextContainer">
                 <h1>Planted <span>invitation</span></h1>
             </div>
@@ -86,28 +85,28 @@
         <section class="fourPartInfoSection">
             <div class="wrapper"> <!--START OF WRAPPER-->
                 <div class="infoContainer">
-                    <a aria-label="open link in a new tab" href="./blog.html" target="_blank"><i class="fa-sharp fa-solid fa-leaf"></i></a>
+                    <a href="./blog.html" aria-label="Link to Blog Page"><i class="fa-sharp fa-solid fa-leaf" aria-hidden="true" title="Leaf Icon"></i></a>
                     <div class="infoText">
                         <h4>Green Houses</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum nostrum dolor optio eos totam aut dicta laborum sequi quod?</p>
                     </div>
                 </div>
                 <div class="infoContainer">
-                    <a aria-label="open link in a new tab" href="./contact.html" target="_blank"><i class="fa-solid fa-users"></i></a>
+                    <a href="./contact.html" aria-label="Link to Contact Page"><i class="fa-solid fa-users" aria-hidden="true" title="Users Icon"></i></a>
                     <div class="infoText">
                         <h4>Community</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati excepturi quo praesentium, fugiat similique officiis dolores dolore iure sapiente voluptates.</p>
                     </div>
                 </div>
                 <div class="infoContainer">
-                    <a aria-label="open link in a new tab" href="./blog.html" target="_blank"><i class="fa-solid fa-file"></i></a>
+                    <a href="./blog.html" aria-label="Link to Blog Page"><i class="fa-solid fa-file" aria-hidden="true" title="File Icon"></i></a>
                     <div class="infoText">
                         <h4>Blog</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi ullam in distinctio harum repellendus, numquam animi mollitia iure sapiente minima.</p>
                     </div>
                 </div>
                 <div class="infoContainer">
-                    <a aria-label="open link in a new tab" href="./contact.html" target="_blank"><i class="fa-solid fa-phone-flip"></i></a>
+                    <a href="./contact.html" aria-label="Link to Contact Page"><i class="fa-solid fa-phone-flip" aria-hidden="true" title="Phone Icon"></i></a>
                     <div class="infoText">
                         <h4>Get in Touch</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus aut, obcaecati officia delectus neque voluptas esse autem? Dolorum, consectetur.</p>
@@ -153,11 +152,12 @@
     <!-- START OF FOOTER -->
     <footer>
         <div class="wrapper">
-            <p>Copyright &copy; 2018 HackerYou</p>
+            <p>Copyright &copy; 2023 Juno College</p>
         </div>
     </footer>
     <!-- END OF FOOTER -->
 
+    <!-- link to script file -->
     <script src="./script.js"></script>
 </body>
 </html>

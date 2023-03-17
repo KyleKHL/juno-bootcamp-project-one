@@ -240,6 +240,7 @@ html {
 html {
   font-size: 125%;
   color: #2c2c2c;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -281,25 +282,24 @@ a:hover, a:focus {
   padding: 0;
   color: #F0EFED;
   margin-right: 70px;
+  margin-left: 5%;
 }
 
-header nav {
-  padding-top: 10px;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: black;
+  z-index: 30;
 }
-header nav .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header nav .toggleHamburger {
+nav .toggleHamburger {
   position: absolute;
   top: 0.75rem;
-  right: 1rem;
-  display: none;
+  right: 5%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -309,21 +309,25 @@ header nav .toggleHamburger {
           justify-content: space-between;
   width: 30px;
   height: 24px;
+  display: none;
+  color: #F0EFED;
 }
-header nav .toggleHamburger .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
+nav .toggleHamburger i {
+  font-size: 1.6rem;
 }
-header nav ul {
+nav .toggleHamburger:hover {
+  color: #F8E71C;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+nav ul {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-header nav ul a {
+nav ul a {
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -376,6 +380,10 @@ footer p {
   line-height: 0;
 }
 
+.homePageNav ul li:nth-child(1) a {
+  color: #F8E71C;
+}
+
 .homePageHeader {
   background-image: url(..//..//assets/home-image-1.jpg);
   background-repeat: no-repeat;
@@ -388,12 +396,6 @@ footer p {
 }
 .homePageHeader .wrapper {
   height: 100%;
-}
-.homePageHeader nav {
-  background-color: #2c2c2c;
-}
-.homePageHeader nav ul li:nth-child(2) a {
-  color: #F8E71C;
 }
 .homePageHeader .leafyBackground {
   background-image: url(..//..//assets/header-box.jpg);
@@ -696,7 +698,7 @@ section.founderSection .wrapper {
   width: calc(33.3333333333% - 20px);
 }
 
-.blogHeader nav li:nth-child(4) a {
+.blogNav ul li:nth-child(3) a {
   color: #F8E71C;
 }
 
@@ -956,6 +958,10 @@ aside.sidebar {
   margin-left: -1rem;
 }
 
+.contactNav ul li:nth-child(4) a {
+  color: #F8E71C;
+}
+
 .contactPageHeader {
   background-image: url(..//..//assets/contact-header-1.jpg);
   background-position: center;
@@ -975,12 +981,6 @@ aside.sidebar {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-.contactPageHeader nav {
-  background-color: black;
-}
-.contactPageHeader nav li:nth-child(5) a {
-  color: #F8E71C;
 }
 
 .contactHeaderContainer h1 {
@@ -1135,46 +1135,47 @@ section.contactSection .wrapper .contactInfo {
   }
 }
 @media (max-width: 750px) {
-  header .wrapper {
+  nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header nav .logo {
+  nav .logo {
     margin-right: 0;
   }
-  header nav .toggleHamburger {
+  nav .toggleHamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header nav ul {
+  nav ul {
+    margin-top: 40px;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-bottom: 0;
+    gap: 0;
   }
-  header nav ul li:hover {
-    background-color: #2c2c2c;
+  nav ul li {
     width: 100%;
-    text-align: center;
   }
-  .menuLinks {
+  nav ul li a {
+    display: block;
+    padding: 20px 5% 20px 5%;
+  }
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: #2c2c2c;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+  .menuContainer {
     display: none;
   }
   .homePageHeader .leafyBackground {

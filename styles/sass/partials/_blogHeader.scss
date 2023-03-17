@@ -2,11 +2,8 @@
 @use './variables' as *;
 // VARIABLES
 
-// BLACK BACKGROUND TO NAV
-.blogHeader nav {
-    li:nth-child(4) a {
-        color: $secondaryColor;
-    }
+.blogNav ul li:nth-child(3) a {
+    color: $secondaryColor;
 }
 
 // HEADER
