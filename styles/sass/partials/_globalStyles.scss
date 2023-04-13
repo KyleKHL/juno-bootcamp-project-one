@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 a:hover, a:focus {
     color: $secondaryColor;
 }

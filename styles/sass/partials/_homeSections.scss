@@ -58,6 +58,29 @@ section.discoverUpcoming {
     } 
 } //discover part is complete//
 
+.pageLink {
+    @include primaryFont(1rem);
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-align: center;
+    background-color: $tertiaryColor;
+    color: $primaryColor;
+    padding: 10px 25px;
+    border: none;
+    // BUTTON ANIMATIONS
+    transition: ease-out 0.5s;
+}
+
+// BUTTON HOVER/FOCUS
+.pageLink:hover,
+.pageLink:focus {
+    background-color: $secondaryColor;
+    color: $basicFontColor;
+    border: 2px;
+}
+
+
 //upcoming part begins
 .upcomingContainer {
     width: 43%;
